@@ -1,4 +1,213 @@
 .header{
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+  .w{
+    position: relative;
+    z-index:11;
+    height:140px;
+    .logo{
+      position: absolute;
+      z-index: 2;
+      top: 10px;
+      width: 190px;
+      height: 120px;
+      background-color: #fff;
+      .logo-tit{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        a{
+          background-image: url(../img/sprite.png);
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          overflow: hidden;
+          display: block;
+          width: 190px;
+          height: 120px;
+          font-size: 0;
+          color: #666;
+          text-decoration: none;
+        }
+      }
+      .hide{
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/logo1.gif);
+        .text{
+          position: absolute;
+          line-height: 20px;
+          left: 50%;
+          width: 120px;
+          font-size: 16px;
+          margin-left: -60px;
+          top: 36px;
+          font-weight: 700;
+          background: transparent;
+          text-align: center;
+          z-index: 1;
+        }
+        .btn{
+          width: 60px;
+          height: 20px;
+          bottom: 35px;
+          margin-left: -32px;
+          text-indent: 4px;
+          color: #555;
+          font-size: 12px;
+          background-repeat: no-repeat;
+          background-position: 50%;
+          background-color: #fff;
+          border-radius: 11px;
+          background-color: rgb(199, 225, 239);
+          position: absolute;
+          line-height: 20px;
+          left: 50%;
+        }
+      }
+    }
+  }
 }
+.w{
+  margin: auto;
+  width: 1190px;
+}
+.header .w .logo:hover .logo-tit a{
+  display: none;
+}
+.header .w .logo:hover .hide{
+  display: block;
+}
+.search{
+  position: relative;
+  z-index: 1;
+  height: 60px;
+  .form{
+    position: absolute;
+    left: 260px;
+    top: 25px;
+    width: 546px;
+    height: 32px;
+    border: 2px solid #e2231a;
+    background-color: #fff;
+    .bg,.text{
+      position: absolute;
+      top: 0;
+      outline: none;
+      color: #989898;
+      left: 0;
+      padding: 2px 44px 2px 17px;
+      width: 425px;
+      height: 30px;
+      border: 1px solid transparent;
+      line-height: 26px;
+      font-size: 12px;
+    }
+    .text{
+      color: #333;
+      background-color: transparent;
+    }
+    .photo{
+      position: absolute;
+      right: 75px;
+      top: 6px;
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      text-align: center;
+      overflow: hidden;
+      color: #9f9f9f;
+      line-height: 14px;
+    }
+    .photo:hover{
+      cursor: pointer;
+      color: #e2231a;
+    }
+    .button{
+      position: absolute;
+      top: -2px;
+      outline: none;
+      right: -1px;
+      width: 58px;
+      height: 32px;
+      line-height: 32px;
+      border: none;
+      background-color: #e1251b;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      transition: background .2s ease;
+    }
+    .button:hover{
+      background-color: #af150d;
+      cursor: pointer;
+    }
+  }
+}
+.mycar{
+  position: absolute;
+  right: 230px;
+  top: 25px;
+  z-index:21px;
+  .mycar-i{
+    width: 130px;
+    height: 34px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 34px;
+    border-color: #eee;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border: 1px solid #e3e4e5;
+    .car{
+      color: #e1251b;
+      margin-right: 13px;
+      font-size: 16px;
+    }
+    a{
+      color: #e1251b;
+    }
+    .count{
+      position: absolute;
+      top: 1px;
+      left: 29px;
+      right: auto;
+      display: inline-block;
+      padding: 1px 3px;
+      font-size: 12px;
+      line-height: 12px;
+      color: #fff;
+      background-color: #e1251b;
+      border-radius: 7px;
+      min-width: 12px;
+      text-align: center;
+    }
+  }
+  
+}
+.mycar:hover .mycar-i{
+  border: 1px solid #af150d;
+  cursor: pointer;
+}
+
+.hotwords{
+  overflow: hidden;
+  position: absolute;
+  left: 260px;
+  top: 65px;
+  width: 550px;
+  height: 20px;
+  line-height: 20px;
+  a{
+    float: left;
+    margin-right: 10px;
+  }
+  a:hover{
+    color: #af150d;
+    cursor: pointer;
+  }
+}
+
+
