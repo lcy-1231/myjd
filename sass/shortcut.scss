@@ -47,6 +47,7 @@
   border-top: none;
   padding:10px 10px 15px 15px;
   box-shadow: 0 0 5px #eee;
+  z-index: 10;
 }
 .city{
   background: #fff;
@@ -95,7 +96,6 @@
 /* 顶部右侧导航 */
 .fr{
   float: right;
-  z-index: 3;
   .iconfont{
     position: absolute;
     right: 5px;
@@ -146,7 +146,7 @@
   background-color: #fff;
   height: 30px;
 }
-.ttbar-myjd:hover .dropdown-layer,.ttbar-caigou:hover .dropdown-layer,.ttbar-server:hover .dropdown-layer,.ttbar-nav:hover .dropdown-layer,,.ttbar-phonejd:hover .dropdown-layer{
+.ttbar-myjd:hover .dropdown-layer,.ttbar-caigou:hover .dropdown-layer,.ttbar-server:hover .dropdown-layer,.ttbar-nav:hover .dropdown-layer,.ttbar-phonejd:hover .dropdown-layer{
   display: block;
   z-index: 10;
   /* top: 28px; */
@@ -160,7 +160,6 @@
   border: 1px solid #e3e4e5;
   border-bottom: none;
   float: left;
-  z-index:1;
 }
 
 .fr li div a{
@@ -177,6 +176,7 @@
   border-top: none;
   background-color: #fff;
   box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+  z-index: 99;
 }
 .ttbar-caigou .dropdown-layer{
   width: 160px;
