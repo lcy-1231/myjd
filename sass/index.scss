@@ -138,6 +138,28 @@
       background-color: #af150d;
       cursor: pointer;
     }
+    .list{
+      position: absolute;
+      top: 32px;
+      left: -2px;
+      width: 485px;
+      height: 65px;
+      background: #fff;
+      z-index: 99;
+      border: 1px solid #eee;
+      overflow: hidden;
+      display: none;
+    }
+    .list li{
+      line-height: 24px;
+      padding: 4px 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .list li:hover{
+      background: #eee;
+      cursor: pointer;
+      // display: block;
+    }
   }
 }
 .mycar{
@@ -202,5 +224,218 @@
     cursor: pointer;
   }
 }
+/* 这是navitems的部分 */
+.navitems{
+  overflow: hidden;
+  position: absolute;
+  left: 203px;
+  bottom: 0px;
+  height: 60px;
+  padding-top: 20px;
+  a{
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    color: #333;
+    margin: 0 11px;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+  }
+  ul{
+    float: left;
+    li{
+      margin-left: 1px;
+      float: left;
+    }
+    .fore1 a,.fore2 a{
+      font-weight: 700;
+      color: #e1251b;
+    }
+    .fore1 :hover a,.fore2 :hover a{
+      color: #780d07;
+    }
+    li:hover a{
+      color: #e1251b;
+      cursor: pointer;
+    }
+  }
+}
+/* 轮播图 */
+.fs{
+  z-index: 9;
+  position: relative;
+  margin-bottom: 30px;
+  .fs_act{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .fs_inner{
+    z-index: 1;
+    height: 480px;
+    background-color: #f4f4f4;
+    position: relative;
+    margin: 0 auto;
+    width: 1190px;
+    .col1,.col2{
+      float: left;
+      height: 480px;
+      margin-right: 10px;;
+    }
+    .col1{
+      width: 190px;
+      .cate{
+        position: relative;
+        z-index:3;
+        .menu{
+          overflow: hidden;
+          padding: 10px 0;
+          height: 450px;
+          background-color: #fefefe;
+          color: #636363;
+          margin-top: 10px;
+          .item{
+            height: 25px;
+            line-height: 25px;
+            overflow: hidden;
+            padding-left:18px ;
+            font-size: 0;
+            a{
+              font-size: 14px;
+              color: #333;
+              transition: color .2s ease;
+            }
+            .line{
+              padding: 0 2px;
+              font-size: 12px;  
+            }
+          }
+          .item:hover{
+            background-color: #eee;
+          }
+          .item a:hover{
+            color: #e1251b;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cate_pop{
+  display: none;
+  position: absolute;
+  left: 191px;
+  top: 0;
+  width: 998px;
+  min-height: 468px;
+  border: 1px solid #f7f7f7;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 0 5px rgba(0,0,0,.3);
+  box-shadow: 2px 0 5px rgba(0,0,0,.3);
+  -webkit-transition: top .25s ease;
+  transition: top .25s ease;
+}
+.cate_part{
+  padding: 20px 0 10px;
+  .cate_col1{
+    float: left;
+    width: 800px;
+    overflow: hidden;
+    .channel{
+      overflow: hidden;
+      padding-left: 20px;
+      height: 24px;
+      a{
+        float: left;
+        margin-right: 10px;
+        padding: 0 10px;
+        height: 24px;
+        background-color: #333;
+        line-height: 24px;
+        color: #fff;
+        i{
+          margin-left: 5px;
+        }
+      }
+    }
+    .detail{
+      overflow: hidden;
+      padding: 10px 0 0 20px;
+      box-sizing: border-box;
+      // height: 400px;
+      .detail_item{
+        position: relative;
+        padding-left: 80px;
+        display: block;
+        height: 28px;
+        .detail_tit{
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          top: 6px;
+          width: 70px;
+          text-align: right;
+          font-weight: 700;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          a{
+            color: #333;
+            font-weight: 700;
+          }
+          i{
+            margin-left: 5px;
+          }
+        }
+        .detail_con{
+          overflow: hidden;
+          padding: 5px 0;
+          a{
+            float: left;
+            margin: 3px 0;
+            padding: 0 7px;
+            height: 16px;
+            line-height: 16px;
+            white-space: nowrap;
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+  .cate_col2{
+    float: left;
+    width: 198px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
