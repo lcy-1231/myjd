@@ -285,76 +285,76 @@
           .fs .fs_inner .col1 .cate .menu .item a:hover {
             color: #e1251b;
             cursor: pointer; }
-
-.cate_pop {
-  display: none;
-  position: absolute;
-  left: 191px;
-  top: 0;
-  width: 998px;
-  min-height: 468px;
-  border: 1px solid #f7f7f7;
-  background-color: #fff;
-  -webkit-box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-  -webkit-transition: top .25s ease;
-  transition: top .25s ease; }
-
-.cate_part {
-  padding: 20px 0 10px; }
-  .cate_part .cate_col1 {
-    float: left;
-    width: 800px;
-    overflow: hidden; }
-    .cate_part .cate_col1 .channel {
-      overflow: hidden;
-      padding-left: 20px;
-      height: 24px; }
-      .cate_part .cate_col1 .channel a {
-        float: left;
-        margin-right: 10px;
-        padding: 0 10px;
-        height: 24px;
-        background-color: #333;
-        line-height: 24px;
-        color: #fff; }
-        .cate_part .cate_col1 .channel a i {
-          margin-left: 5px; }
-    .cate_part .cate_col1 .detail {
-      overflow: hidden;
-      padding: 10px 0 0 20px;
-      box-sizing: border-box; }
-      .cate_part .cate_col1 .detail .detail_item {
-        position: relative;
-        padding-left: 80px;
-        display: block;
-        height: 28px; }
-        .cate_part .cate_col1 .detail .detail_item .detail_tit {
-          overflow: hidden;
+        .fs .fs_inner .col1 .cate .menu .item:hover .cate_pop {
+          display: block; }
+        .fs .fs_inner .col1 .cate .cate_pop {
+          display: none;
           position: absolute;
-          left: 0;
-          top: 6px;
-          width: 70px;
-          text-align: right;
-          font-weight: 700;
-          white-space: nowrap;
-          text-overflow: ellipsis; }
-          .cate_part .cate_col1 .detail .detail_item .detail_tit a {
-            color: #333;
-            font-weight: 700; }
-          .cate_part .cate_col1 .detail .detail_item .detail_tit i {
-            margin-left: 5px; }
-        .cate_part .cate_col1 .detail .detail_item .detail_con {
-          overflow: hidden;
-          padding: 5px 0; }
-          .cate_part .cate_col1 .detail .detail_item .detail_con a {
-            float: left;
-            margin: 3px 0;
-            padding: 0 7px;
-            height: 16px;
-            line-height: 16px;
-            white-space: nowrap;
-            color: #666; }
-  .cate_part .cate_col2 {
-    float: left;
-    width: 198px; }
+          left: 191px;
+          top: 0;
+          width: 998px;
+          min-height: 468px;
+          border: 1px solid #f7f7f7;
+          background-color: #fff;
+          -webkit-box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+          -webkit-transition: top .25s ease;
+          transition: top .25s ease; }
+          .fs .fs_inner .col1 .cate .cate_pop .cate_part {
+            padding: 20px 0 10px; }
+            .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 {
+              float: left;
+              width: 800px;
+              overflow: hidden; }
+              .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 .channel {
+                overflow: hidden;
+                padding-left: 20px;
+                height: 24px; }
+                .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 .channel a {
+                  float: left;
+                  margin-right: 10px;
+                  padding: 0 10px;
+                  height: 24px;
+                  background-color: #333;
+                  line-height: 24px;
+                  color: #fff; }
+                  .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 .channel a i {
+                    margin-left: 5px; }
+              .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 .detail {
+                overflow: hidden;
+                padding: 10px 0 0 20px;
+                box-sizing: border-box; }
+                .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 .detail .detail_item {
+                  position: relative;
+                  padding-left: 80px;
+                  display: block;
+                  height: 28px; }
+                  .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 .detail .detail_item .detail_tit {
+                    overflow: hidden;
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+                    width: 70px;
+                    text-align: right;
+                    font-weight: 700;
+                    white-space: nowrap;
+                    text-overflow: ellipsis; }
+                    .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 .detail .detail_item .detail_tit a {
+                      color: #333;
+                      font-weight: 700; }
+                    .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 .detail .detail_item .detail_tit i {
+                      margin-left: 5px; }
+                  .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 .detail .detail_item .detail_con {
+                    overflow: hidden;
+                    padding: 5px 0; }
+                    .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col1 .detail .detail_item .detail_con a {
+                      float: left;
+                      margin: 3px 0;
+                      padding: 0 7px;
+                      height: 16px;
+                      line-height: 16px;
+                      white-space: nowrap;
+                      color: #666; }
+            .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col2 {
+              float: left;
+              width: 198px; }
