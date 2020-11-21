@@ -474,3 +474,184 @@
                 background-color: rgba(91, 89, 89, 0.728); }
             .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo:hover .prev, .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo:hover .next {
               display: block; }
+    .fs .fs_inner .col3 {
+      position: relative;
+      float: right;
+      width: 190px;
+      height: 480px;
+      z-index: 1; }
+      .fs .fs_inner .col3 .J-user {
+        height: 102px;
+        background: #fff;
+        margin-top: 10px;
+        overflow: hidden;
+        padding-top: 67px;
+        position: relative; }
+        .fs .fs_inner .col3 .J-user .u1 .user-head {
+          position: absolute;
+          left: 20px;
+          top: 13px;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          border: 1px solid #fff;
+          overflow: hidden;
+          box-shadow: 0 0 1px #343333; }
+          .fs .fs_inner .col3 .J-user .u1 .user-head .user-head:hover {
+            cursor: pointer; }
+          .fs .fs_inner .col3 .J-user .u1 .user-head img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: auto;
+            margin-top: 1px; }
+        .fs .fs_inner .col3 .J-user .u1 .welcom {
+          position: absolute;
+          left: 74px;
+          top: 16px; }
+        .fs .fs_inner .col3 .J-user .u1 a:hover {
+          cursor: pointer;
+          color: #e1251b; }
+        .fs .fs_inner .col3 .J-user .u1 p {
+          overflow: hidden;
+          height: 20px;
+          line-height: 20px;
+          width: 100%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color: #666; }
+          .fs .fs_inner .col3 .J-user .u1 p a {
+            color: #333; }
+          .fs .fs_inner .col3 .J-user .u1 p a:hover {
+            cursor: pointer;
+            color: #e1251b; }
+        .fs .fs_inner .col3 .J-user .u2 {
+          height: 25px;
+          font-size: 0;
+          text-align: center; }
+          .fs .fs_inner .col3 .J-user .u2 a {
+            display: inline-block;
+            margin: 0 5px;
+            width: 70px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            border-radius: 13px;
+            background: #e1251b;
+            -webkit-transition: background .3s ease,color .3s ease;
+            transition: background .3s ease,color .3s ease; }
+          .fs .fs_inner .col3 .J-user .u2 .plus {
+            background: #363634;
+            color: #e5d790; }
+          .fs .fs_inner .col3 .J-user .u2 a:hover {
+            cursor: pointer; }
+      .fs .fs_inner .col3 .J-user::after {
+        position: absolute;
+        height: 1px;
+        left: 15px;
+        right: 15px;
+        background: -webkit-gradient(linear, right top, left top, from(white), color-stop(#eeeeee), color-stop(#eeeeee), to(white));
+        background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+        content: " ";
+        bottom: 0; }
+      .fs .fs_inner .col3 .J-news, .fs .fs_inner .col3 .news2 {
+        overflow: hidden;
+        height: 130px;
+        background-color: #fff; }
+        .fs .fs_inner .col3 .J-news .news-hd, .fs .fs_inner .col3 .news2 .news-hd {
+          height: 34px;
+          padding: 10px 0 0;
+          position: relative;
+          line-height: 20px;
+          font-size: 0;
+          margin-bottom: 8px; }
+          .fs .fs_inner .col3 .J-news .news-hd h5, .fs .fs_inner .col3 .news2 .news-hd h5 {
+            display: inline-block;
+            font-size: 14px;
+            margin-left: 15px;
+            color: #333; }
+          .fs .fs_inner .col3 .J-news .news-hd a, .fs .fs_inner .col3 .news2 .news-hd a {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 12px;
+            color: #999; }
+        .fs .fs_inner .col3 .J-news .news-list, .fs .fs_inner .col3 .news2 .news-list {
+          position: relative;
+          margin: 0 15px;
+          height: 88px; }
+          .fs .fs_inner .col3 .J-news .news-list li, .fs .fs_inner .col3 .news2 .news-list li {
+            max-width: 160px;
+            _width: 160px;
+            height: 16px;
+            line-height: 16px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            color: #999;
+            margin-bottom: 6px; }
+            .fs .fs_inner .col3 .J-news .news-list li a, .fs .fs_inner .col3 .news2 .news-list li a {
+              color: #666;
+              text-decoration: none; }
+              .fs .fs_inner .col3 .J-news .news-list li a span, .fs .fs_inner .col3 .news2 .news-list li a span {
+                display: inline-block;
+                position: relative;
+                font-size: 12px;
+                height: 16px;
+                width: 35px;
+                line-height: 16px;
+                text-align: center;
+                vertical-align: 0;
+                color: #e1251b;
+                background-color: rgba(225, 37, 27, 0.08);
+                margin-right: 6px; }
+      .fs .fs_inner .col3 .J-service {
+        overflow: hidden;
+        position: relative;
+        height: 238px;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease; }
+        .fs .fs_inner .col3 .J-service .service-entry {
+          overflow: hidden;
+          padding: 5px .5px;
+          background: #fff; }
+          .fs .fs_inner .col3 .J-service .service-entry .service-list {
+            padding-top: 5px;
+            height: 225px; }
+            .fs .fs_inner .col3 .J-service .service-entry .service-list .service-item {
+              position: relative;
+              float: left;
+              width: 63px;
+              height: 55px;
+              background: #fff;
+              text-align: center;
+              overflow: hidden; }
+              .fs .fs_inner .col3 .J-service .service-entry .service-list .service-item .service-lk {
+                display: block;
+                position: relative;
+                *cursor: pointer;
+                -webkit-transition: all .2s linear;
+                transition: all .2s linear; }
+                .fs .fs_inner .col3 .J-service .service-entry .service-list .service-item .service-lk i {
+                  position: relative;
+                  width: 28px;
+                  height: 28px;
+                  margin: 0 auto;
+                  display: block; }
+                  .fs .fs_inner .col3 .J-service .service-entry .service-list .service-item .service-lk i img {
+                    width: 28px;
+                    height: 28px;
+                    display: block;
+                    border: 0;
+                    vertical-align: middle; }
+                .fs .fs_inner .col3 .J-service .service-entry .service-list .service-item .service-lk span {
+                  display: block;
+                  height: 25px;
+                  line-height: 25px;
+                  border-bottom: 2px solid #fff;
+                  color: #333;
+                  -webkit-transition: color .15s ease;
+                  transition: color .15s ease; }
