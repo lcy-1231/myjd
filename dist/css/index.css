@@ -655,3 +655,42 @@
                   color: #333;
                   -webkit-transition: color .15s ease;
                   transition: color .15s ease; }
+
+/* app */
+#app {
+  position: relative;
+  z-index: 10; }
+
+.J-seckill {
+  outline: none;
+  position: relative;
+  z-index: 10; }
+
+.seckill {
+  height: 260px;
+  margin-bottom: 20px; }
+  .seckill .seckill-inner {
+    background-color: #fff;
+    height: 100%;
+    overflow: hidden; }
+    .seckill .seckill-inner .seckill-countdown {
+      position: relative;
+      float: left;
+      width: 190px;
+      height: 100%;
+      color: #fff;
+      background-color: #e83632;
+      background-image: url(../img/ms.png);
+      background-size: contain;
+      background-position: 50%;
+      background-repeat: no-repeat; }
+      .seckill .seckill-inner .seckill-countdown .countdown-title {
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 31px; }
+
+.container {
+  width: 1190px;
+  margin: 0 auto; }
