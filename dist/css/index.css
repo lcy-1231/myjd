@@ -259,8 +259,9 @@
       width: 190px; }
       .fs .fs_inner .col1 .cate {
         position: relative;
-        z-index: 3; }
+        z-index: 13; }
         .fs .fs_inner .col1 .cate .menu {
+          z-index: 12;
           overflow: hidden;
           padding: 10px 0;
           height: 450px;
@@ -358,3 +359,118 @@
             .fs .fs_inner .col1 .cate .cate_pop .cate_part .cate_col2 {
               float: left;
               width: 198px; }
+    .fs .fs_inner .col2 {
+      width: 790px; }
+      .fs .fs_inner .col2 .focus {
+        position: relative;
+        height: 470px;
+        margin-top: 10px;
+        overflow: hidden; }
+        .fs .fs_inner .col2 .focus .focus-main {
+          width: 790px;
+          height: 470px;
+          position: relative; }
+          .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper {
+            width: 590px;
+            margin-right: 10px;
+            float: left;
+            overflow: hidden;
+            position: relative; }
+            .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper .imgmain {
+              width: 590px;
+              height: 470px;
+              position: relative; }
+              .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper .imgmain img {
+                width: 590px;
+                height: 470px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                transition: opacity 3000ms ease-in-out 0s; }
+            .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper .main img.show {
+              z-index: 10; }
+            .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper .prev, .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper .next {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              line-height: 30px;
+              text-align: center;
+              background-color: rgba(238, 231, 231, 0.394);
+              position: absolute;
+              top: 50%;
+              margin-top: -10px;
+              cursor: pointer;
+              z-index: 11; }
+            .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper .prev {
+              left: -10px; }
+            .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper .next {
+              right: -10px; }
+            .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper .nums {
+              position: absolute;
+              left: 30px;
+              bottom: 25px;
+              z-index: 11; }
+              .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper .nums li {
+                width: 10px;
+                height: 10px;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                margin: 0 3px;
+                background-color: rgba(165, 163, 163, 0.442);
+                float: left; }
+            .fs .fs_inner .col2 .focus .focus-main .sliderBannerWrapper .nums li.active {
+              background-color: #f5edef;
+              box-shadow: 0px 0px 1px #fff; }
+          .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper {
+            width: 190px;
+            float: left;
+            height: 470px;
+            overflow: hidden; }
+            .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo {
+              position: relative;
+              height: 470px; }
+              .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo div {
+                width: 190px;
+                height: 470px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0; }
+                .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo div img {
+                  width: 190px;
+                  height: 150px;
+                  margin-bottom: 10px; }
+                .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo div img:hover {
+                  cursor: pointer;
+                  opacity: 0.8; }
+              .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo div.show {
+                z-index: 10; }
+                .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo div.show img {
+                  width: 190px;
+                  height: 150px;
+                  margin-bottom: 10px; }
+              .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo .prev, .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo .next {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                line-height: 30px;
+                text-align: center;
+                background-color: rgba(238, 231, 231, 0.394);
+                position: absolute;
+                top: 50%;
+                margin-top: -10px;
+                cursor: pointer;
+                z-index: 11;
+                display: none; }
+              .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo .prev {
+                left: -10px; }
+              .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo .next {
+                right: -10px; }
+              .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo .prev:hover {
+                background-color: rgba(91, 89, 89, 0.728); }
+              .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo .next:hover {
+                background-color: rgba(91, 89, 89, 0.728); }
+            .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo:hover .prev, .fs .fs_inner .col2 .focus .focus-main .sliderRecommendWrapper .threelunbo:hover .next {
+              display: block; }

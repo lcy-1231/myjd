@@ -1,19 +1,132 @@
 (function(){
-  var menuli=$1('.menu')
-  var cate_pop=$1('.cate_pop')
-  var cate_part=$2('.cate_part')
+  var imgs=$2('.sliderBannerWrapper .imgmain img')
+  var prev=$1('.sliderBannerWrapper .prev')
+  var next=$1('.sliderBannerWrapper .next')
+  var lis=$2('.sliderBannerWrapper .nums li')
+  var showIndex=0
+  var timer
 
-  // 应该是移到哪个上，哪个就显示出来，其余的隐藏
-  $(menuli).on('mouseover','li',function(){
-    for(var i=0;i<cate_part.length;i++){
-      cate_part[i].style.display='none'
-      if($(cate_part[i]).attr('code')===$(this).attr('code')){
-        cate_pop.style.display='block'
-        cate_part[i].style.display='block'
-      }
+  var divs=$2('.sliderRecommendWrapper .threelunbo div')
+  var prev2=$1('.sliderRecommendWrapper .prev')
+  var next2=$1('.sliderRecommendWrapper .next')
+  var show=0
+  var timer2
+
+  // 自动播放
+  animate(imgs[showIndex],{'opacity':1},function(){
+    timer=setInterval(() => {
+      moveNext()
+    }, 3000);
+  })
+  //three自动播放
+  animate(divs[show],{'opacity':1},function(){
+    timer2=setInterval(() => {
+      moveNext2()
+    }, 5000);
+  })
+
+  function moveNext(){
+    imgs[showIndex].className=''
+    lis[showIndex].className=''
+    imgs[showIndex].style.opacity=0
+
+    showIndex++
+    if(showIndex>=imgs.length){
+      showIndex=0
     }
-  })
-  $(menuli).on('mouseout','li',function(){
-    cate_pop.style.display='none'
-  })
+    imgs[showIndex].className='show'
+    lis[showIndex].className='active'
+    animate(imgs[showIndex],{'opacity':1})
+  }
+  // three
+  function moveNext2(){
+    divs[show].className=''
+    divs[show].style.opacity=0
+
+    show++
+    if(show>=divs.length){
+      show=0
+    }
+    divs[show].className='show'
+    animate(divs[show],{'opacity':1})
+  }
+
+  function movePrev(){
+    imgs[showIndex].className=''
+    lis[showIndex].className=''
+    imgs[showIndex].style.opacity=0
+
+    showIndex--
+    if(showIndex < 0){
+      showIndex=imgs.length-1
+    }
+    imgs[showIndex].className='show'
+    lis[showIndex].className='active'
+    animate(imgs[showIndex],{'opacity':1})
+  }
+  // three
+  function movePrev2(){
+    divs[show].className=''
+    divs[show].style.opacity=0
+
+    show--
+    if(show<0){
+      show=div.length-1
+    }
+    divs[show].className='show'
+    animate(divs[show],{'opacity':1})
+  }
+
+  prev.onclick=function(){
+    clearInterval(timer)
+    clearInterval(imgs[showIndex].timer)
+    movePrev()
+    timer=setInterval(() => {
+      moveNext()
+    }, 3000);
+  }
+  // three
+  prev2.onclick=function(){
+    clearInterval(timer2)
+    clearInterval(divs[show].timer)
+    movePrev2()
+    timer2=setInterval(() => {
+      moveNext2()
+    }, 5000);
+  }
+  next.onclick=function(){
+    clearInterval(timer)
+    clearInterval(imgs[showIndex].timer)
+    moveNext()
+    timer=setInterval(() => {
+      moveNext()
+    }, 3000);
+  }
+  // three
+  next2.onclick=function(){
+    clearInterval(timer2)
+    clearInterval(divs[show].timer)
+    moveNext2()
+    timer2=setInterval(() => {
+      moveNext2()
+    }, 5000);
+  }
+  for(var i=0;i<lis.length;i++){
+    lis[i].index=i
+    lis[i].onmouseover=function(){
+      clearInterval(timer)
+      clearInterval(imgs[showIndex].timer)
+      imgs[showIndex].className=''
+      lis[showIndex].className=''
+      imgs[showIndex].style.opacity=0
+      showIndex=this.index
+      imgs[showIndex].className='show'
+      lis[showIndex].className='active'
+      animate(imgs[showIndex],{'opacity':1})
+      timer=setInterval(() => {
+        moveNext()
+      }, 3000);
+    }
+  }
+
 })()

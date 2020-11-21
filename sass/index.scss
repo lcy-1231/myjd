@@ -291,8 +291,9 @@
       width: 190px;
       .cate{
         position: relative;
-        z-index:3;
+        z-index:13;
         .menu{
+          z-index: 12;
           overflow: hidden;
           padding: 10px 0;
           height: 450px;
@@ -414,8 +415,155 @@
         }
       }
     }
+    .col2{
+      width: 790px;
+      .focus{
+        position: relative;
+        height: 470px;
+        margin-top: 10px;
+        overflow: hidden;
+        .focus-main{
+          width: 790px;
+          height: 470px;
+          position: relative;
+          .sliderBannerWrapper{
+            width: 590px;
+            margin-right: 10px;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            .imgmain{
+              width: 590px;
+              height: 470px;
+              position: relative;
+              img{
+                width: 590px;
+                height: 470px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                transition:opacity 3000ms ease-in-out 0s
+              }
+            }
+            .main img.show{
+              z-index: 10;
+            }
+            .prev,.next{
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              line-height: 30px;
+              text-align: center;
+              background-color: rgba(238, 231, 231, 0.394);
+              position: absolute;
+              top: 50%;
+              margin-top: -10px;
+              cursor: pointer;
+              z-index: 11;
+            }
+            .prev{
+              left: -10px;
+            }
+            .next{
+              right: -10px;
+            }
+            .nums{
+              position: absolute;
+              left: 30px;
+              bottom: 25px;
+              z-index:11;
+              li{
+                width: 10px;
+                height: 10px;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                margin: 0 3px;
+                background-color: rgba(165, 163, 163, 0.442);
+                float: left;
+              }
+            }
+            .nums li.active{
+              background-color: rgb(245, 237, 239);
+              box-shadow: 0px 0px 1px #fff;
+            }
+          }
+          .sliderRecommendWrapper{
+            width: 190px;
+            float: left;
+            height: 470px;
+            overflow: hidden;
+            .threelunbo{
+              position: relative;
+              height: 470px;
+              div{
+                width: 190px;
+                height: 470px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                img{
+                  width: 190px;
+                  height: 150px;
+                  margin-bottom: 10px;
+                }
+                img:hover{
+                  cursor: pointer;
+                  opacity: 0.8;
+                }
+              }
+              div.show{
+                z-index: 10;
+                img{
+                  width: 190px;
+                  height: 150px;
+                  margin-bottom: 10px;
+                }
+              }
+              .prev,.next{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                line-height: 30px;
+                text-align: center;
+                background-color: rgba(238, 231, 231, 0.394);
+                position: absolute;
+                top: 50%;
+                margin-top: -10px;
+                cursor: pointer;
+                z-index: 11;
+                display: none;
+              }
+              .prev{
+                left: -10px;
+              }
+              .next{
+                right: -10px;
+              }
+              .prev:hover{
+                background-color: rgba(91, 89, 89, 0.728);
+              }
+              .next:hover{
+                background-color: rgba(91, 89, 89, 0.728);
+              }
+            }
+            .threelunbo:hover .prev,.threelunbo:hover .next{
+              display: block;
+              
+            }
+            
+          }
+        }
+      }
+    }
+    .col3{
+      
+    }
   }
 }
+
 
 
 
