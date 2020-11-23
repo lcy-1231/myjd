@@ -196,7 +196,15 @@ function animate(dom,options,callback){
     }
   },20)
 }
-
+//封装时间差函数，获取时间差秒数
+function getDifTime(startDate,endDate){
+  return (endDate.getTime()-startDate.getTime())/1000
+}
+//给1-9的数字前面加0处理
+function toDB(num){
+  //0-9前要加0 
+  return num<10? '0'+num :num
+}
 
 
 

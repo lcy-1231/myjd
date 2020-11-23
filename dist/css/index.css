@@ -645,8 +645,7 @@
                     width: 28px;
                     height: 28px;
                     display: block;
-                    border: 0;
-                    vertical-align: middle; }
+                    border: 0; }
                 .fs .fs_inner .col3 .J-service .service-entry .service-list .service-item .service-lk span {
                   display: block;
                   height: 25px;
@@ -694,3 +693,246 @@
 .container {
   width: 1190px;
   margin: 0 auto; }
+
+.countdown-desc {
+  margin-top: 90px;
+  font-size: 14px;
+  text-align: center; }
+  .countdown-desc strong {
+    font-size: 18px;
+    padding-right: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -1px; }
+
+.countdown-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  height: 30px;
+  margin-top: 10px;
+  display: block; }
+  .countdown-main .timer-unit {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #2f3430;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700; }
+  .countdown-main .timer-second {
+    margin-right: 0; }
+  .countdown-main .timer-unit::after {
+    content: ":";
+    display: block;
+    position: absolute;
+    right: -20px;
+    font-weight: bolder;
+    font-size: 18px;
+    width: 20px;
+    height: 100%;
+    top: 0; }
+  .countdown-main .timer-second::after {
+    content: ""; }
+
+.timer {
+  color: #333;
+  font-weight: 700; }
+
+.seckill-list {
+  position: relative;
+  float: left;
+  width: 800px;
+  height: 100%;
+  overflow: hidden; }
+  .seckill-list .slider-control {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    border-radius: 0;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #d9d9d9;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin-top: -20px;
+    font-size: 20px;
+    z-index: 2;
+    border: none;
+    outline: none;
+    -webkit-transition: background-color .2s ease;
+    transition: background-color .2s ease; }
+  .seckill-list .slider-control-prev {
+    left: 0;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    color: #fff; }
+  .seckill-list .slider-control-next {
+    right: 1px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    color: #fff; }
+  .seckill-list .slider-list {
+    width: 800px;
+    overflow: hidden;
+    height: 260px;
+    position: relative; }
+    .seckill-list .slider-list .slider-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2400px; }
+    .seckill-list .slider-list a {
+      display: block;
+      width: 200px;
+      height: 260px;
+      float: left; }
+      .seckill-list .slider-list a img {
+        width: 140px;
+        height: 140px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.2s linear, opacity 0.2s linear !important;
+        background: transparent; }
+      .seckill-list .slider-list a h6 {
+        font-size: 12px;
+        font-weight: 400;
+        color: #333;
+        -webkit-transition: color .2s ease;
+        transition: color .2s ease;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 13px; }
+      .seckill-list .slider-list a .price {
+        border: 1px solid #e1251b;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        line-height: 24px;
+        overflow: hidden;
+        background-color: #e1251b;
+        width: 160px;
+        height: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7px; }
+        .seckill-list .slider-list a .price .miaosha {
+          width: 92px;
+          height: 100%;
+          text-align: center;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
+          float: left; }
+          .seckill-list .slider-list a .price .miaosha i {
+            font-size: 12px;
+            font-weight: 400;
+            padding-right: 2px; }
+        .seckill-list .slider-list a .price .miaosha::before {
+          content: " ";
+          width: 0;
+          height: 0;
+          border-color: transparent white transparent transparent;
+          border-style: solid;
+          border-width: 22px 8px 0 0;
+          position: absolute;
+          top: 0;
+          left: 84px; }
+        .seckill-list .slider-list a .price .origin {
+          height: 100%;
+          width: 66px;
+          float: right;
+          background: #fff;
+          text-align: center;
+          color: #999;
+          font-size: 12px;
+          line-height: 22px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          text-decoration: line-through;
+          vertical-align: top; }
+    .seckill-list .slider-list a:hover {
+      background-color: rgba(255, 255, 255, 0.34);
+      cursor: pointer; }
+    .seckill-list .slider-list a:hover h6 {
+      color: #e83632; }
+
+.seckill-brand {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 260px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .seckill-brand .brand-slider {
+    width: 100%;
+    height: 100%; }
+    .seckill-brand .brand-slider .slider-list {
+      overflow: hidden; }
+      .seckill-brand .brand-slider .slider-list .slider-wrapper {
+        opacity: 1;
+        width: 480px; }
+        .seckill-brand .brand-slider .slider-list .slider-wrapper a {
+          float: left;
+          width: 180px;
+          position: relative;
+          height: 240px;
+          min-height: 1px;
+          text-align: center; }
+          .seckill-brand .brand-slider .slider-list .slider-wrapper a img {
+            width: 120px;
+            height: 120px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px; }
+          .seckill-brand .brand-slider .slider-list .slider-wrapper a .promo {
+            color: #333;
+            font-weight: 700; }
+          .seckill-brand .brand-slider .slider-list .slider-wrapper a div {
+            color: #e1251b;
+            border-radius: 14px;
+            width: 82px;
+            height: 24px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            text-align: center;
+            display: inline-block;
+            line-height: 22px;
+            font-weight: 700;
+            padding-left: 4px;
+            font-size: 12px;
+            border: 1px solid #e1251b;
+            margin-top: 4px;
+            -webkit-transition: background-color .2s ease;
+            transition: background-color .2s ease; }
+    .seckill-brand .brand-slider .slider-indicators {
+      position: absolute;
+      left: 50%;
+      margin-left: -6px;
+      bottom: 16px;
+      font-size: 0;
+      text-align: center; }
+      .seckill-brand .brand-slider .slider-indicators i {
+        position: relative;
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        margin-right: 4px;
+        border-radius: 50%;
+        background: #999;
+        -webkit-transition: background .2s ease;
+        transition: background .2s ease; }
+      .seckill-brand .brand-slider .slider-indicators .active {
+        background: #e1251b; }
