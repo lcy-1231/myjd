@@ -1336,12 +1336,15 @@
       overflow: hidden;
       .buy-container{
         padding: 0 20px 0 15px;
+        width: 590px;
+        // overflow: hidden;
         .goods-core{
           position: relative;
-          width: 270px;
+          width: 260px;
           height: 265px;
           margin-right: 15px;
-          display: inline-block;
+          display: block;
+          float: left;
           img{
             position: relative;
             width: 70px;
@@ -1373,15 +1376,10 @@
               position: relative;
             }
             .core-desc-extra{
-              padding-right: 5px;
               position: relative;
-              .extra-text{
-                margin-right: 4px;
-              }
               .extra-day{
                 display: inline-block;
                 span{
-                  margin-right: 4px;
                   font-weight: 700;
                 }
               }
@@ -1406,6 +1404,50 @@
             transition: opacity .2s ease;
             position: relative;
             border: 0;
+          }
+        }
+        .goods-others{
+          width: 280px;
+          height: 265px;
+          vertical-align: top;
+          margin-top:-40px;
+          float: left;
+          .other-item{
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            display: inline-block;
+            width: 135px;
+            height: 100px;
+            padding: 14px 0;
+            box-sizing: border-box;
+            img{
+              width: 100px;
+              height: 50px;
+              margin: 0 auto;
+              position: relative;
+              vertical-align: middle;
+            }
+            h6{
+              color: #666;
+              margin-top: 6px;
+              font-size: 12px;
+              text-align: center;
+              font-weight: 400;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+          .other-item:nth-child(2n-1):after{
+            position: absolute;
+            width: 1px;
+            height: 60px;
+            right: 0;
+            top: 50%;
+            margin-top: -30px;
+            background: linear-gradient(180deg,white,#eee,#eee,white);
+            content: '';
           }
         }
       }
@@ -1454,23 +1496,314 @@
     }
   }
 }
+#J-niceGoods{
+  outline: none;
+}
+.nice-goods{
+  height: 260px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 190px;
+  margin-bottom: 20px;
+}
+.nice-goods-logo{
+  background-image: url(../img/nicebg.png);
+  background-color: #eee;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 190px;
+  height: 100%;
+}
+.logo-container{
+  width: 160px;
+  height: 90px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/nicebg1.png);
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  .logo-text{
+    color: rgba(255,255,255,.8);
+    font-size: 16px;
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    display: block;
+    i{
+      background-image: url(../img/sprite1.png);
+      background-position: 0 -16px;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      margin-left: 6px;
+      margin-top: -2px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    i:hover{
+      background-position: 0 0;
+    }
+  }
+}
+.nice-goods-recommends{
+  background-color: white;
+  // overflow: hidden;
+  margin-left: 10px;
+  height: 100%;
+  position: relative;
+  .goods{
+    width: 150px;
+    display: inline-block;
+    margin-top: 50px;
+    vertical-align: top;
+  }
+  .name{
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+  }
+  img{
+    height: 150px;
+    margin: 0 auto;
+  }
+}
+/* 发现好货 nice 轮播 */
 
+.swiper-container {
+  width:990px;
+  height:260px;
+  margin:0 auto;
+}
+.swiper-container-free-mode > .swiper-wrapper {
+  transition-timing-function:linear;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 新品首发 频道上面的那个块 */
+.floor{
+  height: 340px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.box{
+  float: left;
+  height: 340px;
+  margin: 0 10px 0 0;
+}
+.newArrival{
+  width: 290px;
+  background: #fff;
+  background-image: url(../img/newarrivalbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.new-top{
+  width: 290px;
+  background: #fff;
+  position: relative;
+}
+.nice-shop{
+  background-color: #fff;
+  width: 290px;
+}
+.coupon{
+  width: 290px;
+  background-color: #fff;
+}
+.box-last{
+  margin-right: 0;
+}
+.box-hd{
+  height: 60px;
+  padding: 0 20px;
+  font-size: 0;
+  line-height: 0;
+}
+.box-hd-lk{
+  display: inline-block;
+  position: relative;
+  height: 32px;
+  margin: 12px 0 0;
+}
+.box-tit{
+  float: left;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333;
+  line-height: 32px;
+}
+.box-hd-arrow{
+  background-image: url(../img/sprite1.png);
+  background-position: -16px 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  float: left;
+  top: 9px;
+  left: 10px;
+}
+.box-hd-arrow:hover{
+  background-position: 0 0;
+}
+.box-bd{
+  overflow: hidden;
+}
+.newArrival-slider{
+  position: relative;
+  width: 260px;
+  height: 250px;
+  margin: 0 auto;
+}
+.slider-control{
+  position: absolute;
+  top: 50%;
+  border-radius: 0;
+  width: 25px;
+  height: 35px;
+  background-color: rgba(0,0,0,.15);
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+button{
+  cursor: pointer;
+}
+.newArrival-slider .slider-control{
+  margin-top: -50px;
+}
+.newArrival-slider .slider-control-prev{
+  left: -15px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.newArrival-slider .slider-control-next{
+  right: -15px;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+.slider-control-prev i{
+ left: -3px;
+}
+.slider-control-next i{
+  left: -3px;
+ }
+.slider-control i{
+  left: -3px;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color:rgba(255,255,255,.8)
+ }
+ .newArrival-slider .slider-list{
+   position: relative;
+   height: 250px;
+   overflow: hidden;
+ }
+ .newArrival-slider .slider-wrapper{
+   position: relative;
+   left: -65px;
+   width: 1300px;
+   transform: translate3d(1390px,0px,0px);
+   transition: transform 500ms ease-in-out 0s;
+   display: block;
+ }
+.newArrival-item{
+  width: 130px;
+  float: left;
+  transition: all .4s ease;
+  transform: scale(.8);
+  transform-origin: center center;
+  position: relative;
+  text-align: center;
+}
+.newArrival-slider .slider-item{
+  height: 100%;
+  min-height: 1px;
+}
+.newArrival-item-lk{
+  display: block;
+  position: relative;
+}
+.lazimg-loaded{
+  background: transparent;
+}
+.lazimg{
+  position: relative;
+  overflow: hidden;
+}
+.newArrival-item-img img{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin-top: 10px;
+}
+.newArrival-item-msg{
+  transition: opacity .4s ease;
+  opacity: 0;
+}
+.newArrival-item-name{
+  position: relative;
+  width: 200px;
+  left: -35px;
+  line-height: 19px;
+  font-size: 14px;
+  color: #333;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.newArrival-item-desc{
+  position: relative;
+    width: 200px;
+    height: 16px;
+    left: -35px;
+    line-height: 16px;
+    letter-spacing: 0;
+    font-size: 12px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0;
+}
+.newArrival-item-price{
+  margin-top: 20px;
+  font-size: 18px;
+  color: #e1251b;
+  letter-spacing: 0;
+  .dollar-txt{
+    font-size: 12px;
+  }
+}
+.newArrival-item-new{
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 48px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url(../img/newbg.png);
+  background-size: cover;
+  background-position: 50%;
+  color: white;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}

@@ -4,9 +4,9 @@
   // 获取slider-wrapper,左右按钮
   // 每隔3秒自动播放
   // 点击按钮有用
-  var prev = $1('.slider-control-prev');
-  var next = $1('.slider-control-next');
-  var slider = $1('.slider-wrapper'); // console.log(slider);
+  var prev = $1('.seckill-list .slider-control-prev');
+  var next = $1('.seckill-list .slider-control-next');
+  var slider = $1('.seckill-list .slider-wrapper'); // console.log(slider);
   // slider.style.left='-800px'
 
   var i = 0;

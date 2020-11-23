@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="./font/iconfont.css">
   <link rel="stylesheet" href="./css/shortcut.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <script src="./js/jquery-1.8.3.js"></script>
+  <script src="./js/swiper.min.js"></script>
 </head>
 
 <body class="index">
@@ -2132,18 +2135,19 @@
                 <img src="./img/l7.webp" alt="">
                 <img src="./img/l8.webp" alt="">
               </div>
-              <p class="prev"><</p>
-              <p class="next">></p>
-              <ul class="nums">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
+              <p class="prev">
+                << /p>
+                  <p class="next">></p>
+                  <ul class="nums">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
             </div>
             <div class="sliderRecommendWrapper">
               <div class="threelunbo">
@@ -2157,8 +2161,9 @@
                   <img src="./img/thr5.webp" alt="">
                   <img src="./img/thr6.webp" alt="">
                 </div>
-                <p class="prev"><</p>
-                <p class="next">></p>
+                <p class="prev">
+                  << /p>
+                    <p class="next">></p>
               </div>
             </div>
           </div>
@@ -2345,7 +2350,7 @@
             </a>
             <div class="seckill-list">
               <div class="slider">
-                <button class="slider-control slider-control-prev"><</button>
+                <button class="slider-control slider-control-prev">《</button>
                 <div class="slider-list">
                   <div class="slider-wrapper">
                     <a>
@@ -2516,10 +2521,10 @@
                         </span>
                       </div>
                     </a>
-                    
+
                   </div>
                 </div>
-                <button class="slider-control slider-control-next">></button>
+                <button class="slider-control slider-control-next">》</button>
               </div>
             </div>
             <div class="seckill-brand">
@@ -2704,7 +2709,7 @@
             </div>
             <div class="box bd">
               <div class="buy-container">
-                <div class="goods-core">
+                <a class="goods-core">
                   <img src="../img/light1.webp" alt="">
                   <h6>万代潮玩专场</h6>
                   <div class="core-desc">
@@ -2717,11 +2722,126 @@
                     </span>
                   </div>
                   <img src="../img/light2.webp" alt="" class="core-goods">
+                </a>
+                <div class="goods-others">
+                  <a class="other-item">
+                    <img src="../img/light3.webp" alt="">
+                    <h6>vivo手机专卖</h6>
+                  </a>
+                  <a class="other-item">
+                    <img src="../img/light3.webp" alt="">
+                    <h6>vivo手机专卖</h6>
+                  </a>
+                  <a class="other-item">
+                    <img src="../img/light3.webp" alt="">
+                    <h6>vivo手机专卖</h6>
+                  </a>
+                  <a class="other-item">
+                    <img src="../img/light3.webp" alt="">
+                    <h6>vivo手机专卖</h6>
+                  </a>
+                  <a class="other-item">
+                    <img src="../img/light3.webp" alt="">
+                    <h6>vivo手机专卖</h6>
+                  </a>
+                  <a class="other-item">
+                    <img src="../img/light3.webp" alt="">
+                    <h6>vivo手机专卖</h6>
+                  </a>
                 </div>
               </div>
             </div>
 
           </div>
+        </div>
+        <div id="J-niceGoods">
+          <div class="nice-goods container">
+            <a href="" class="nice-goods-logo">
+              <div class="logo-container">
+                <div class="logo-text">
+                  探索新生活
+                  <i></i>
+                </div>
+              </div>
+            </a>
+            <div class="nice-goods-recommends">
+              <div class="swiper-container" id="case4">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide goods">
+                    <div class="name">Redmi 立体双扬声器</div>
+                    <img src="./img/nice1.webp">
+                  </div>
+                  <div class="swiper-slide goods">
+                    <img src="./img/nice2.webp">
+                    <div class="name">Redmi 立体双扬声器</div>
+                  </div>
+                  <div class="swiper-slide goods">
+                    <div class="name">Redmi 立体双扬声器</div>
+                    <img src="./img/nice3.webp">
+                  </div>
+                  <div class="swiper-slide goods">
+                    <img src="./img/nice4.webp">
+                    <div class="name">Redmi 立体双扬声器</div>
+                  </div>
+                  <div class="swiper-slide goods">
+                    <div class="name">Redmi 立体双扬声器</div>
+                    <img src="./img/nice5.webp">
+                  </div>
+                  <div class="swiper-slide goods">
+                    <img src="./img/nice6.webp">
+                    <div class="name">Redmi 立体双扬声器</div>
+                  </div>
+                </div>
+                <!-- 分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 滚动条 -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="J-core2" class="container floor">
+          <div class="box newArrival">
+            <div class="box-hd">
+              <a href="" class="box-hd-lk">
+                <h3 class="box-tit">新品首发</h3>
+                <i class="box-hd-arrow"></i>
+              </a>
+            </div>
+            <div class="box-bd">
+              <div class="slider newArrival-slider">
+                <button class="slider-control slider-control-prev">
+                  <i class="iconfont">《</i>
+                </button>
+                <div class="slider-list">
+                  <div class="slider-wrapper">
+                    <div class="slider-item newArrival-item">
+                      <a class="newArrival-item-lk">
+                        <div class="lazying lazying-loaded newArrival-item-img">
+                          <img src="./img/" alt="">
+                        </div>
+                        <div class="newArrival-item-msg">
+                          <p class="newArrival-item-name"></p>
+                          <p class="newArrival-item-desc"></p>
+                          <p class="newArrival-item-price">
+                            <span class="dollar-txt">￥</span>3799.00
+                            <span>起</span>
+                          </p>
+                          <div class="newArrival-item-new">NEW</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <button class="slider-control slider-control-next">
+                  <i class="iconfont">></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="box new-top"></div>
+          <div class="box nice-shop"></div>
+          <div class="box coupon box-last"></div>
         </div>
       </div>
     </div>
@@ -2729,7 +2849,6 @@
 
 
   <script src="./js/tools.js"></script>
-  <script src="./js/jquery-1.8.3.js"></script>
   <script src="./js/address.js"></script>
   <script src="./js/formtxt.js"></script>
   <script src="./js/keywords.js"></script>
@@ -2739,6 +2858,7 @@
   <script src="./js/fourlun.js"></script>
   <script src="./js/onelun.js"></script>
   <script src="./js/tab.js"></script>
+  <script src="./js/fivelun.js"></script>
 </body>
 
 </html>
