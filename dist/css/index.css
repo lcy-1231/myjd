@@ -883,7 +883,7 @@
       overflow: hidden; }
       .seckill-brand .brand-slider .slider-list .slider-wrapper {
         opacity: 1;
-        width: 480px; }
+        width: 1000px; }
         .seckill-brand .brand-slider .slider-list .slider-wrapper a {
           float: left;
           width: 180px;
@@ -936,3 +936,308 @@
         transition: background .2s ease; }
       .seckill-brand .brand-slider .slider-indicators .active {
         background: #e1251b; }
+
+/* 每日特价 */
+.J-spec .J-core1 {
+  height: 340px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .J-spec .J-core1 .box {
+    float: left;
+    height: 340px;
+    margin: 0 10px 0 0; }
+  .J-spec .J-core1 .offer {
+    background-color: white;
+    width: 590px; }
+    .J-spec .J-core1 .offer .box-bd .special-inner {
+      padding: 0 15px 15px; }
+      .J-spec .J-core1 .offer .box-bd .special-inner .special-tab {
+        position: relative; }
+        .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-head {
+          position: absolute;
+          bottom: 108%;
+          right: 0; }
+          .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-head .item {
+            position: relative;
+            display: inline-block;
+            margin: 0 13.5px; }
+            .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-head .item a {
+              color: #e1251b;
+              display: inline-block;
+              cursor: pointer;
+              font-size: 14px;
+              font-family: Microsoft Yahei,PingFangSC-Medium,sans-serif,serif;
+              color: #999;
+              line-height: 19px;
+              border-bottom: transparent 2px solid;
+              padding-bottom: 2px; }
+          .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-head .item-last {
+            margin-right: 0; }
+          .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-head .active {
+            border-bottom: #e1251b 2px solid; }
+            .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-head .active a {
+              color: #e1251b; }
+        .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item {
+          width: 560px;
+          height: 270px; }
+          .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list {
+            width: 560px;
+            height: 270px;
+            display: inline-block; }
+            .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .slider-item {
+              display: inline-block;
+              vertical-align: top;
+              width: 170px;
+              height: 89px; }
+              .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .slider-item a {
+                position: relative;
+                display: inline-block;
+                width: 170px; }
+            .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 {
+              background-color: rgba(109, 126, 146, 0.05);
+              float: left;
+              width: 170px;
+              height: 265px;
+              margin-right: 6px; }
+              .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 a {
+                position: relative;
+                display: inline-block;
+                width: 170px; }
+                .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 a .item-img {
+                  margin-top: 46px;
+                  width: 120px;
+                  display: inline-block;
+                  left: 50%;
+                  margin-left: -60px;
+                  height: 120px;
+                  text-align: center;
+                  float: left;
+                  position: relative;
+                  overflow: hidden; }
+                  .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 a .item-img img {
+                    width: 100%;
+                    height: 100%; }
+                .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 a .item-lowest {
+                  display: inline-block;
+                  width: 90px;
+                  height: 24px;
+                  position: absolute;
+                  left: 0;
+                  background-image: url(../img/tab-bg.png);
+                  background-size: cover;
+                  background-position: 50%;
+                  font-weight: 700;
+                  font-size: 12px;
+                  line-height: 24px;
+                  color: #fff;
+                  letter-spacing: 0;
+                  text-align: center; }
+                .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 a .item-message {
+                  margin-left: 0;
+                  width: 100%;
+                  text-align: center;
+                  float: left; }
+                  .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 a .item-message .name {
+                    margin-top: 9px;
+                    margin-bottom: 4px;
+                    height: 19px;
+                    line-height: 19px;
+                    width: 150px;
+                    font-size: 14px;
+                    display: inline-block;
+                    text-align: center;
+                    color: #333;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-break: break-all; }
+                  .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 a .item-message .price {
+                    margin-top: 4px; }
+                    .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 a .item-message .price .miao {
+                      font-size: 18px;
+                      display: inline;
+                      margin: 0 2px;
+                      line-height: 16px;
+                      color: #e1251b;
+                      letter-spacing: 0;
+                      font-weight: 700; }
+                      .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 a .item-message .price .miao span {
+                        font-size: 12px; }
+                    .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item0 a .item-message .price .origin {
+                      display: inline;
+                      margin: 0 2px;
+                      width: 100%;
+                      text-decoration: line-through;
+                      color: #999;
+                      font-size: 12px;
+                      line-height: 14px; }
+            .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1, .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item2 {
+              margin-top: 18px; }
+            .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1, .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item2, .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item3, .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item4 {
+              margin-left: 19px;
+              margin-bottom: 48px; }
+            .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1 .special-item-img {
+              float: left;
+              width: 84px;
+              height: 84px;
+              position: relative;
+              overflow: hidden;
+              transition: background 0.2s linear, opacity 0.2s linear !important;
+              background: transparent; }
+              .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1 .special-item-img img {
+                width: 100%;
+                height: 100%; }
+            .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1 .special-item-lowest {
+              display: inline-block;
+              overflow: hidden;
+              width: 84px;
+              height: 16px;
+              font-size: 11px;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              background: rgba(0, 0, 0, 0.6);
+              white-space: nowrap;
+              color: #fff;
+              text-align: center;
+              line-height: 16px; }
+            .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1 .message {
+              float: left;
+              width: 75px;
+              margin-left: 6px;
+              font-size: 0; }
+              .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1 .message .name {
+                display: inline-block;
+                width: 100%;
+                color: #333;
+                height: 32px;
+                font-size: 12px;
+                line-height: 16px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-all; }
+              .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1 .message .price {
+                margin-top: 4px; }
+                .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1 .message .price .miao {
+                  font-size: 18px;
+                  display: inline;
+                  margin: 0 2px;
+                  line-height: 16px;
+                  color: #e1251b;
+                  letter-spacing: 0;
+                  font-weight: 700; }
+                  .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1 .message .price .miao span {
+                    font-size: 12px; }
+                .J-spec .J-core1 .offer .box-bd .special-inner .special-tab .tab-body .tab-body-item .special-list .item1 .message .price .origin {
+                  display: inline;
+                  margin: 0 2px;
+                  width: 100%;
+                  text-decoration: line-through;
+                  color: #999;
+                  font-size: 12px;
+                  line-height: 14px; }
+  .J-spec .J-core1 .buy {
+    margin-right: 0;
+    background-color: white;
+    width: 590px;
+    overflow: hidden; }
+    .J-spec .J-core1 .buy .buy-container {
+      padding: 0 20px 0 15px; }
+      .J-spec .J-core1 .buy .buy-container .goods-core {
+        position: relative;
+        width: 270px;
+        height: 265px;
+        margin-right: 15px;
+        display: inline-block; }
+        .J-spec .J-core1 .buy .buy-container .goods-core img {
+          position: relative;
+          width: 70px;
+          height: 35px;
+          display: block;
+          margin: 15px auto 0;
+          z-index: 1;
+          border: 0; }
+        .J-spec .J-core1 .buy .buy-container .goods-core h6 {
+          position: relative;
+          color: #333;
+          font-weight: 700;
+          font-size: 16px;
+          text-align: center;
+          z-index: 1;
+          margin-top: 6px; }
+        .J-spec .J-core1 .buy .buy-container .goods-core .core-desc {
+          position: relative;
+          text-align: center;
+          font-size: 12px;
+          color: #666;
+          margin-bottom: 13px;
+          margin-top: 1px;
+          z-index: 1; }
+          .J-spec .J-core1 .buy .buy-container .goods-core .core-desc .core-desc-promo {
+            padding-right: 5px;
+            position: relative; }
+          .J-spec .J-core1 .buy .buy-container .goods-core .core-desc .core-desc-extra {
+            padding-right: 5px;
+            position: relative; }
+            .J-spec .J-core1 .buy .buy-container .goods-core .core-desc .core-desc-extra .extra-text {
+              margin-right: 4px; }
+            .J-spec .J-core1 .buy .buy-container .goods-core .core-desc .core-desc-extra .extra-day {
+              display: inline-block; }
+              .J-spec .J-core1 .buy .buy-container .goods-core .core-desc .core-desc-extra .extra-day span {
+                margin-right: 4px;
+                font-weight: 700; }
+          .J-spec .J-core1 .buy .buy-container .goods-core .core-desc .core-desc-extra::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            width: 1px;
+            height: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(102, 102, 102, 0.4); }
+        .J-spec .J-core1 .buy .buy-container .goods-core .core-goods {
+          width: 130px;
+          height: 130px;
+          display: block;
+          margin: 0 auto;
+          -webkit-transition: opacity .2s ease;
+          transition: opacity .2s ease;
+          position: relative;
+          border: 0; }
+
+#J-spec .special-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 170px;
+  height: 89px;
+  position: relative; }
+
+.box-hd {
+  height: 60px;
+  padding: 0 20px;
+  font-size: 0;
+  line-height: 0; }
+  .box-hd a {
+    display: inline-block;
+    position: relative;
+    height: 32px;
+    margin: 12px 0 0; }
+    .box-hd a h3 {
+      float: left;
+      font-weight: 700;
+      font-size: 24px;
+      color: #333;
+      line-height: 32px; }
+    .box-hd a i {
+      background-image: url(../img/sprite1.png);
+      background-position: -16px 0;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      float: left;
+      top: 9px;
+      left: 10px;
+      color: #e1251b; }
+    .box-hd a i:hover {
+      background-image: url(../img/sprite1.png);
+      background-position: 0 0;
+      cursor: pointer; }
