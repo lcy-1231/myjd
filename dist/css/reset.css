@@ -28,9 +28,6 @@ figcaption {
 header, footer, section, article, aside, nav, main, hgroup {
   display: block; }
 
-* {
-  box-sizing: border-box; }
-
 body {
   font-size: 12px;
   font-family: "微软雅黑"; }

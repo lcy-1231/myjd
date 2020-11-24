@@ -30,6 +30,13 @@ task('html', async ()=>{
   .pipe(load.connect.reload())
 })
 
+// 处理json
+task('json', async ()=>{
+  src('./data/*.*')
+  .pipe(dest('./dist/data'))
+  .pipe(load.connect.reload())
+})
+
 // 编译sass
 task('sass', async ()=>{
   src('./sass/*.scss')
@@ -49,6 +56,7 @@ task('font', async ()=>{
 task('watch', async ()=>{
   watch('./pages/*.html',series('html'))
   watch('./sass/*.scss',series('sass'))
+  watch('./data/*.json',series('json'))
   watch('./img/*.*',series('img'))
   watch('./js/*.js',series('script'))
 })
@@ -62,4 +70,4 @@ task('connect', async ()=>{
   })
 })
 
-task('dev', series('delDist','img','html','script','sass','font','connect','watch'))
+task('dev', series('delDist','img','html','script','sass','font','json','connect','watch'))

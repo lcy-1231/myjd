@@ -3,7 +3,7 @@
 // 当前时间
 // 每一秒--
 (function(){
-  var endDate=new Date('2020/11/23 12:12:12')
+  var endDate=new Date('2020/12/23 12:12:12')
   var nowDate=new Date()
   var s=getDifTime(nowDate,endDate)
 

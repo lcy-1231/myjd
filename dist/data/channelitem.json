@@ -1,0 +1,114 @@
+[
+  {
+    "num": "3",
+    "title":"企业购",
+    "aside":"一站式企业采购平台",
+    "img1":"./img/channelsitem3.webp",
+    "img2":"./img/channelsitem4.webp"
+  },
+  {
+    "num": "4",
+    "title":"智能数码",
+    "aside":"尽享玩物",
+    "img1":"./img/channelsitem5.webp",
+    "img2":"./img/channelsitem6.webp"
+  },
+  {
+    "num": "5",
+    "title":"Joy寻宝",
+    "aside":"懂你的Joy",
+    "img1":"./img/channelsitem7.webp",
+    "img2":"./img/channelsitem8.webp"
+  },
+  {
+    "num": "6",
+    "title":"京东超市",
+    "aside":"一站式生活好物",
+    "img1":"./img/channelsitem9.webp",
+    "img2":"./img/channelsitem10.webp"
+  },
+  {
+    "num": "7",
+    "title":"京东金融",
+    "aside":"会理财 懂生活",
+    "img1":"./img/channelsitem11.webp",
+    "img2":"./img/channelsitem12.webp"
+  },
+  {
+    "num": "8",
+    "title":"生鲜馆",
+    "aside":"尝遍天下鲜",
+    "img1":"./img/channelsitem13.webp",
+    "img2":"./img/channelsitem14.webp"
+  },
+  {
+    "num": "9",
+    "title":"家装城",
+    "aside":"用心装好家一站式购齐",
+    "img1":"./img/channelsitem15.webp",
+    "img2":"./img/channelsitem16.webp"
+  },
+  {
+    "num": "10",
+    "title":"食品饮料",
+    "aside":"吃货嘉年华",
+    "img1":"./img/channelsitem17.webp",
+    "img2":"./img/channelsitem18.webp"
+  },
+  {
+    "num": "11",
+    "title":"汽车生活",
+    "aside":"放心养车 爱车无忧",
+    "img1":"./img/channelsitem19.webp",
+    "img2":"./img/channelsitem20.webp"
+  },
+  {
+    "num": "12",
+    "title":"京东国际",
+    "aside":"一站尽享进口好物",
+    "img1":"./img/channelsitem21.webp",
+    "img2":"./img/channelsitem22.webp"
+  },
+  {
+    "num": "13",
+    "title":"个护清洁馆",
+    "aside":"欢喜四季 洁净生活",
+    "img1":"./img/channelsitem23.webp",
+    "img2":"./img/channelsitem24.webp"
+  },
+  {
+    "num": "14",
+    "title":"企业好店",
+    "aside":"企业用户都在逛",
+    "img1":"./img/channelsitem25.webp",
+    "img2":"./img/channelsitem26.webp"
+  },
+  {
+    "num": "15",
+    "title":"电脑办公",
+    "aside":"科技潮物 回想不停",
+    "img1":"./img/channelsitem27.webp",
+    "img2":"./img/channelsitem28.webp"
+  },
+  {
+    "num": "16",
+    "title":"京东工业品",
+    "aside":"一站式工业品采购平台",
+    "img1":"./img/channelsitem29.webp",
+    "img2":"./img/channelsitem30.webp"
+  },
+  {
+    "num": "17",
+    "title":"玩3C",
+    "aside":"一站式企业采购平台",
+    "img1":"./img/channelsitem31.webp",
+    "img2":"./img/channelsitem32.webp"
+  },
+  {
+    "num": "18",
+    "title":"拍拍二手",
+    "aside":"一站式企业采购平台",
+    "img1":"./img/channelsitem33.webp",
+    "img2":"./img/channelsitem34.webp"
+  }
+]
