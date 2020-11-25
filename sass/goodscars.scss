@@ -1,0 +1,238 @@
+.header{
+  padding: 10px 0 0;
+}
+.w{
+  width: 990px;
+  margin: 0 auto;
+}
+#logo-2014{
+  float: left;
+  position: relative;
+  width: 277px;
+  padding: 0;
+  height: 50px;
+  margin: 15px 0 22px;
+  a{
+    display: block;
+    margin-top: 2px;
+    width: 134px;
+    height: 42px;
+    background: url(../img/listlogo1.png) no-repeat 0 0;
+    background-size: 134px 42px;
+    text-indent: -20000px;
+  }
+}
+#search{
+  float: right;
+  border: 1px solid #c91623;
+  height: 24px;
+  margin-top: 30px;
+  overflow: hidden;
+  div{
+    overflow: hidden;
+    border: 1px solid #c91623;
+    .ipt{
+      width: 270px;
+      height: 24px;
+      border: 0;
+      text-indent: 10px;
+    }
+    .btn{
+      width: 52px;
+      height: 24px;
+      background-color:  #c91623;
+      color: #f1f1f1;
+      border: none;
+    }
+  }
+}
+.car-body{
+  .car-empty{
+    height: 98px;
+    padding: 80px 0 120px;
+    color: #333;
+    .message{
+      height: 98px;
+      padding-left: 341px;
+      background: url(../img/goodscarempty.png) 250px 22px no-repeat;
+      ul{
+        padding-top: 23px;
+        .txt{
+          font-size: 14px;
+        }
+        li{
+          line-height: 26px;
+          a{
+            color: #005ea7;
+          }
+        }
+      }
+    }
+  }
+}
+.mt20{
+  margin-top: 20px;
+}
+.tab{
+  margin-top: 20px;
+  .tab-hd{
+    height: 30px;
+    .tab1{
+      float: left;
+      li{
+        float: left;
+        margin-right: 40px;
+        border-bottom: 2px solid transparent;
+      }
+      .active1{
+        color: #c91623;
+        font-weight: 700;
+        border-bottom: 2px solid #c91623;
+      }
+    }
+    .tab2{
+      float: right;
+      li{
+        float: left;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #999;
+        margin-left: 5px;
+      }
+      .active2{
+        width: 20px;
+        border-radius: 5px;
+        background-color: #c91623;
+      }
+    }
+  }
+  .tab-bd{
+    border: 1px dashed #999;
+    border-left: none;
+    width: 990px;
+    height: 308px;
+    overflow: hidden;
+    .img-wrap{
+      overflow: hidden;
+      .item{
+        float: left;
+        position: relative;
+        width: 206px;
+        height: 266px;
+        padding: 20px;
+        border: 1px dashed #cacaca;
+        overflow: hidden;
+        .item-img{
+          width: 160px;
+          margin: 0 auto;
+          cursor: pointer;
+          img{
+            width: 160px;
+            height: 160px;
+          }
+        }
+        p{
+          height: 36px;
+          line-height: 18px;
+          margin: 5px 0;
+          overflow: hidden;
+          cursor: pointer;
+          color: #333;
+        }
+        i{
+          width: 100%;
+          margin: 5px 0 2px;
+          overflow: hidden;
+          text-align: center;
+        }
+        span{
+          display: block;
+          margin: 10px 0 0;
+          text-align: center;
+          border: 1px solid #999;
+          color: #666;
+          padding: 0 20px;
+          height: 28px;
+          line-height: 28px;
+          border-radius: 3px;
+        }
+      }
+      .item:nth-of-type(2n){
+        border-right: none;
+      }
+    }
+  }
+}
+/* 购物车中有商品的时候 */
+.car-have{
+  .title{
+    line-height: 40px;
+    background-color: #ccc;
+    margin: 15px 0;
+    padding:0 15px;
+  }
+  .a1{
+    margin-left: 100px;
+  }
+  .a2{
+    margin-left: 450px;
+  }
+  .a3{
+    margin-left: 100px;
+  }
+  .a4{
+    margin-left: 100px;
+  }
+  .list li{
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .list li img{
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+  }
+  .list li h3{
+    float: left;
+    width: 400px;
+    padding: 10px 0;
+  }
+  .list li p{
+    float: left;
+    width: 80px;
+    text-align: center;
+    margin-left: 70px;
+    padding: 10px 0;
+  }
+  .list li span{
+    float: left;
+    width: 100px;
+    margin-left: 40px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .sub,.plus{
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .list li em{
+    float: left;
+    width: 60px;
+    margin-left: 70px;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .one{
+    float: left;
+    margin-right: 10px;
+    margin-top: 45px;
+  }
+}
+
+
+
+
+

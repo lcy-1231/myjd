@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>京东秒杀-正品保证</title>
+  <title>京东购物车</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./font/iconfont.css">
   <link rel="stylesheet" href="./css/shortcut.css">
-  <link rel="stylesheet" href="./css/goodslist.css">
+  <link rel="stylesheet" href="./css/goodscars.css">
   <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
@@ -347,248 +347,130 @@
       </ul>
     </div>
   </div>
-  <div id="main"></div>
-  <!-- S 主体内容 -->
-  <div class="mod_container">
-    <div class="sk_mod_hd" id="sk_mod_hd">
-      <div class="grid_c1">
-        <div class="w">
-          <div id="logo-2014">
-            <a href="" class="logo">京东</a>
-            <div class="extra">
-              <div id="channel">秒杀</div>
-              <div id="categorys-mini">
-                <div class="cw-icon">
-                  <h2>
-                    <a href="">全部分类
-                      <i class="ci-right">
 
-                      </i>
-                    </a>
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="search-2014">
-            <div class="form">
-              <input type="text" class="text" id="key">
-              <button class="button cw-icon">
-                <i></i>搜索
-              </button>
-            </div>
-          </div>
-          <div id="settleup-2014">
-            <div class="cw-icon">
-              <i class="ci-left"></i>
-              <i class="ci-count" id="shopping-amount">0</i>
-              <a href="">我的购物车</a>
-            </div>
-          </div>
-          <div id="hotwords">
-            <a>手机</a>
-            <a>手机</a>
-            <a>手机</a>
-            <a>手机</a>
-          </div>
-          <span class="clr"></span>
-        </div>
+  <div class="w header w1 clearfix">
+    <div id="logo-2014">
+      <a href=""></a>
+    </div>
+    <div id="search">
+      <div>
+        <input type="text" class="ipt">
+        <input type="button" class="btn" value="搜索">
       </div>
     </div>
-    <div class="skmu J_menu" id="skmu">
-      <div class="grid_c1">
-        <div class="skmu_list">
-          <ul class="skmu_list_cnt">
-            <li class="skmu_list_item skmu_list_item_on">
-              <a>京东秒杀</a>
-            </li>
-            <li class="skmu_list_item">
-              <a>京东秒杀</a>
-            </li>
-            <li class="skmu_list_item">
-              <a>京东秒杀</a>
-            </li>
-            <li class="skmu_list_item">
-              <a>京东秒杀</a>
-            </li>
-          </ul>
-        </div>
-        <div class="skmu_cls">
-          <i class="skmu_cls_line"></i>
-          <ul class="skmu_cls_list">
-            <li class="skmu_cls_item skmu_cls_item_last">
-              <a>
-                更多分类
-                <i class="skmu_arrow"></i>
-              </a>
-            </li>
+  </div>
+
+  <div class="car-body">
+    <div class="w">
+      <div class="car-empty">
+        <div class="message">
+          <ul>
+            <li class="txt">购物车空空的哦~，去看看心仪的商品吧~</li>
+            <li><a>去购物</a></li>
           </ul>
         </div>
       </div>
+
+      <div class="car-have">
+        <div class="title">
+          <span class="a1">商品</span>
+          <span class="a2">单价</span>
+          <span class="a3">数量</span>
+          <span class="a4">操作</span>
+        </div>
+        <ul class="list">
+          <!-- <li>
+            <input type="checkbox">
+            <img src="./img/l1.webp" alt="">
+            <h3>青春靓丽洋气时尚大方帅气的小白鞋，情侣同款</h3>
+            <p>￥188</p>
+            <span><button class="sub">-</button> <i>2</i>  <button class="plus">+</button></span>
+            <em>删除</em>
+          </li>
+          <li>
+            <img src="./img/l1.webp" alt="">
+            <h3>青春靓丽洋气时尚大方帅气的小白鞋，情侣同款</h3>
+            <p>￥188</p>
+            <span>2</span>
+            <em>删除</em>
+          </li>
+          <li>
+            <img src="./img/l1.webp" alt="">
+            <h3>青春靓丽洋气时尚大方帅气的小白鞋，情侣同款</h3>
+            <p>￥188</p>
+            <span>2</span>
+            <em>删除</em>
+          </li> -->
+        </ul>
+      </div>
     </div>
-    <div class="seckill_container">
-      <div class="seckill_container_bg"></div>
-      <div class="seckill_lowestprice">
-        <div class="seckill_lowestprice_btn">什么是历史最低价</div>
+  </div>
+
+
+  <div class="w mt20"></div>
+
+  <div class="w">
+    <div class="tab">
+      <div class="tab-hd">
+        <ul class="tab1">
+          <li class="active1">猜你喜欢</li>
+          <li>随手购</li>
+        </ul>
+        <ul class="tab2">
+          <li class="active2"></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
-      <div class="skhd">
-        <div class="skhd_wrap">
-          <div class="grid_c1">
-            <h3 class="skhd_tit"></h3>
+      <div class="tab-bd">
+        <div class="img-wrap">
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/huan1.jpg" alt="">
+            </div>
+            <p>文字</p>
+            <i>价格</i>
+            <span>加入购物车</span>
           </div>
-          <div class="skhd_bg"></div>
-        </div>
-      </div>
-      <div class="skwrap">
-        <div class="timeline">
-          <div class="grid_c1">
-            <ul class="timeline_list">
-              <li class="timeline_item timeline_item_selected">
-                <a href="" class="timeline_item_link">
-                  <div class="timeline_item_link_skew">
-                    <div class="timeline_item_link_skew_timewrap">
-                      <i class="timeline_item_link_skew_time">16:00</i>
-                    </div>
-                    <div class="timeline_item_link_skew_processwrap">
-                      <i class="timeline_item_link_skew_processtips">进行中</i>
-                    </div>
-                    <div class="timeline_timecount">
-                      <b class="timeline_timecount_txt">正在秒杀</b>
-                      <b class="J-timeline_timecount_wrap timeline_timecount_time">
-                        距结束
-                        <i class="hour timecount_time_txt_time">01</i>:
-                        <i class="minutes timecount_time_txt_time">01</i>:
-                        <i class="seconds timecount_time_txt_time">52</i>
-                      </b>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="timeline_item">
-                <a href="" class="timeline_item_link">
-                  <div class="timeline_item_link_skew">
-                    <div class="timeline_item_link_skew_timewrap">
-                      <i class="timeline_item_link_skew_time">16:00</i>
-                    </div>
-                    <div class="timeline_item_link_skew_processwrap">
-                      <i class="timeline_item_link_skew_processtips">进行中</i>
-                    </div>
-                    <div class="timeline_timecount">
-                      <b class="timeline_timecount_txt">正在秒杀</b>
-                      <b class="J-timeline_timecount_wrap timeline_timecount_time">
-                        距结束
-                        <i class="hour timecount_time_txt_time">01</i>:
-                        <i class="minutes timecount_time_txt_time">01</i>:
-                        <i class="seconds timecount_time_txt_time">52</i>
-                      </b>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="timeline_item">
-                <a href="" class="timeline_item_link">
-                  <div class="timeline_item_link_skew">
-                    <div class="timeline_item_link_skew_timewrap">
-                      <i class="timeline_item_link_skew_time">16:00</i>
-                    </div>
-                    <div class="timeline_item_link_skew_processwrap">
-                      <i class="timeline_item_link_skew_processtips">进行中</i>
-                    </div>
-                    <div class="timeline_timecount">
-                      <b class="timeline_timecount_txt">正在秒杀</b>
-                      <b class="J-timeline_timecount_wrap timeline_timecount_time">
-                        距结束
-                        <i class="hour timecount_time_txt_time">01</i>:
-                        <i class="minutes timecount_time_txt_time">01</i>:
-                        <i class="seconds timecount_time_txt_time">52</i>
-                      </b>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="timeline_item">
-                <a href="" class="timeline_item_link">
-                  <div class="timeline_item_link_skew">
-                    <div class="timeline_item_link_skew_timewrap">
-                      <i class="timeline_item_link_skew_time">16:00</i>
-                    </div>
-                    <div class="timeline_item_link_skew_processwrap">
-                      <i class="timeline_item_link_skew_processtips">进行中</i>
-                    </div>
-                    <div class="timeline_timecount">
-                      <b class="timeline_timecount_txt">正在秒杀</b>
-                      <b class="J-timeline_timecount_wrap timeline_timecount_time">
-                        距结束
-                        <i class="hour timecount_time_txt_time">01</i>:
-                        <i class="minutes timecount_time_txt_time">01</i>:
-                        <i class="seconds timecount_time_txt_time">52</i>
-                      </b>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="timeline_item">
-                <a href="" class="timeline_item_link">
-                  <div class="timeline_item_link_skew">
-                    <div class="timeline_item_link_skew_timewrap">
-                      <i class="timeline_item_link_skew_time">16:00</i>
-                    </div>
-                    <div class="timeline_item_link_skew_processwrap">
-                      <i class="timeline_item_link_skew_processtips">进行中</i>
-                    </div>
-                    <div class="timeline_timecount">
-                      <b class="timeline_timecount_txt">正在秒杀</b>
-                      <b class="J-timeline_timecount_wrap timeline_timecount_time">
-                        距结束
-                        <i class="hour timecount_time_txt_time">01</i>:
-                        <i class="minutes timecount_time_txt_time">01</i>:
-                        <i class="seconds timecount_time_txt_time">52</i>
-                      </b>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/huan1.jpg" alt="">
+            </div>
+            <p>文字</p>
+            <i>价格</i>
+            <span>加入购物车</span>
           </div>
-        </div>
-        <div class="spsk">
-          <div class="grid_c1">
-            <ul class="seckill_mod_goodslist clearfix">
-              <!-- <li class="seckill_mod_goods">
-                <a href="" class="seckill_mod_goods_link">
-                  <img src="./img/g1.jpg" alt="" class="seckill_mod_goods_link_img">
-                  <h4 class="seckill_mod_goods_title">前100加送】中青年爆款体检卡</h4>
-                  <p class="seckill_mod_goods_desc">前100加送泡腾片</p>
-                </a>
-                <div class="seckill_mod_goods_info">
-                  <span class="seckill_mod_goods_info_txt">
-                    <span class="seckill_mod_goods_price">
-                      <i class="seckill_mod_goods_price_now">
-                        <em>￥</em>838
-                      </i>
-                      <span class="seckill_mod_goods_plus_lowest">
-                        91天历史最低
-                      </span>
-                      <span class="seckill_mod_goods_price_pre">
-                        ￥
-                        <del>2274</del>
-                      </span>
-                    </span>
-                  </span>
-                  <a class="seckill_mod_goods_info_i">立即抢购</a>
-                </div>
-              </li> -->
-            </ul>
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/huan1.jpg" alt="">
+            </div>
+            <p>文字</p>
+            <i>价格</i>
+            <span>加入购物车</span>
+          </div>
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/huan1.jpg" alt="">
+            </div>
+            <p>文字</p>
+            <i>价格</i>
+            <span>加入购物车</span>
+          </div>
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/huan1.jpg" alt="">
+            </div>
+            <p>文字</p>
+            <i>价格</i>
+            <span>加入购物车</span>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- E 主体内容 -->
+  <div class="w mt20"></div>
 
-
-
-  <div class="J-footer">
+  <div id="J-footer">
     <div class="w">
       <div class="mod-service">
         <div class="grid-c1 mod-service-inner">
@@ -860,6 +742,6 @@
   <script src="./js/tools.js"></script>
   <script src="./js/jquery-1.8.3.js"></script>
   <script src="./js/address.js"></script>
-  <script src="./js/goodslist.js"></script>
+  <script src="./js/goodscars.js"></script>
 </body>
 </html>

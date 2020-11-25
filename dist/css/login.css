@@ -101,6 +101,10 @@
 .login-form .login-tab-r {
   right: 0; }
 
+.login-form .login-tab-r a {
+  color: #f51d1d;
+  font-weight: 800; }
+
 .login-form .login-tab {
   height: 54px;
   font-size: 18px;
@@ -207,7 +211,7 @@
   line-height: 18px;
   height: 18px;
   border: 0;
-  padding: 10px 0 10px 50px;
+  padding: 20px 0 10px 50px;
   width: 254px;
   float: none;
   overflow: hidden;
@@ -288,6 +292,8 @@
     color: #fff;
     font-size: 20px;
     font-family: 'Microsoft YaHei'; }
+  .login-form .login-box .login-btn .btn-img:hover {
+    background: #b51c1f; }
 
 .btn-img, .button {
   display: inline-block;
@@ -296,6 +302,12 @@
   border: 0;
   text-align: center;
   cursor: pointer; }
+
+.cuole {
+  margin-top: 10px;
+  color: #b61d1d;
+  font-size: 12px;
+  display: none; }
 
 .login-form .qrcode-login {
   display: none;

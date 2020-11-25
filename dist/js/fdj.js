@@ -16,7 +16,7 @@ for (var i = 0; i < boxsImg.length; i++) {
   //获取当前选项卡的下标
   boxsImg[i].index = i;
 
-  boxsImg[i].onclick = function () {
+  boxsImg[i].onmouseover = function () {
     //清空之前选项卡的样式
     for (var j = 0; j < boxsImg.length; j++) {
       boxsImg[j].className = 'box';
