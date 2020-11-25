@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* 顶部导航 */
+.container {
+  width: 1190px;
+  margin: 0 auto; }
+
 .shortcut {
   border-bottom: 1px solid #ddd;
   background-color: #e3e4e5; }
@@ -146,7 +150,7 @@
 
 .ttbar-myjd:hover .dropdown-layer, .ttbar-caigou:hover .dropdown-layer, .ttbar-server:hover .dropdown-layer, .ttbar-nav:hover .dropdown-layer, .ttbar-phonejd:hover .dropdown-layer {
   display: block;
-  z-index: 10;
+  z-index: 99;
   /* top: 28px; */ }
 
 .cw-icon {
@@ -183,7 +187,7 @@
   left: -93px; }
 
 .ttbar-nav .dropdown-layer {
-  width: 1190px;
+  width: 1191px;
   left: -1030px;
   padding: 10px; }
 

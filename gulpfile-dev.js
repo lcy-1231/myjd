@@ -56,7 +56,7 @@ task('font', async ()=>{
 task('watch', async ()=>{
   watch('./pages/*.html',series('html'))
   watch('./sass/*.scss',series('sass'))
-  watch('./data/*.json',series('json'))
+  watch('./data/*.*',series('json'))
   watch('./img/*.*',series('img'))
   watch('./js/*.js',series('script'))
 })

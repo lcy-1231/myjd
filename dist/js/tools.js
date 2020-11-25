@@ -77,7 +77,7 @@ function ajax(options) {
   } // 判断请求方式
 
 
-  if (options.type.toLowerCase() === 'get') {
+  if (options.type === 'get') {
     var time = '';
     time = options.cache ? '' : Date.now(); // 2.打开连接
 
@@ -87,7 +87,7 @@ function ajax(options) {
     xhr.send(null); // get请求传null
   }
 
-  if (options.type.toLowerCase() === 'post') {
+  if (options.type === 'post') {
     // 2.打开连接
     xhr.open(options.type, options.url, true); // 默认true，异步
     // post 请不会有缓存问题
@@ -217,4 +217,31 @@ function getDifTime(startDate, endDate) {
 function toDB(num) {
   //0-9前要加0 
   return num < 10 ? '0' + num : num;
+} //获取元素到最外层定位父级的距离
+
+
+function offset(dom, bool) {
+  var t = 0,
+      l = 0;
+  var borderLeft = dom.clientLeft;
+  var borderTop = dom.clientTop;
+
+  while (dom) {
+    l += dom.offsetLeft + dom.clientLeft;
+    t += dom.offsetTop + dom.clientTop; // 每次循环完，让dom元素等于他的定位父级
+
+    dom = dom.offsetParent;
+  }
+
+  if (bool) {
+    return {
+      left: l,
+      top: t
+    }; //包含自身边框
+  } else {
+    return {
+      left: l - borderLeft,
+      top: t - borderTop
+    }; // 不包含自身边框
+  }
 }

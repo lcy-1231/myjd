@@ -1,0 +1,235 @@
+@charset "UTF-8";
+.w {
+  width: 1210px;
+  margin: 0 auto; }
+
+#logo-2014 {
+  position: relative;
+  z-index: 12;
+  float: left;
+  width: 362px;
+  height: 60px;
+  padding: 20px 0;
+  margin: 15px -70px 22px; }
+
+#logo-2014 .logo {
+  display: block;
+  width: 270px;
+  height: 60px;
+  background: url(../img/listlogo1.png) no-repeat 0 0;
+  text-indent: -20000px; }
+
+#logo-2014 .extra {
+  position: absolute;
+  top: 15px;
+  left: 168px;
+  width: 180px;
+  height: 70px;
+  padding-left: 10px;
+  background: #fff; }
+
+#channel {
+  float: left;
+  margin-right: 10px;
+  cursor: default;
+  font-size: 20px;
+  line-height: 70px;
+  font-weight: 400;
+  color: #333; }
+
+#categorys-mini {
+  float: left;
+  color: #666;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  padding-top: 22px;
+  height: 27px;
+  font-family: simsun; }
+
+#search-2014 {
+  position: relative;
+  z-index: 11;
+  float: left;
+  width: 462px;
+  margin-top: 25px; }
+
+#settleup-2014 {
+  margin-right: 65px; }
+
+#settleup-2014 {
+  float: right;
+  z-index: 11;
+  height: 36px;
+  margin-top: 25px; }
+
+.dorpdown {
+  position: relative; }
+
+#hotwords {
+  width: 518px; }
+
+#hotwords {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden; }
+
+/* 广告区 */
+#shop-head {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 0; }
+  #shop-head .bg {
+    width: 100%;
+    height: 110px; }
+    #shop-head .bg img {
+      width: 100%;
+      height: 100%; }
+  #shop-head .nav-wrapper {
+    height: 40px;
+    width: 100%;
+    background-color: #0A0A0A; }
+    #shop-head .nav-wrapper .nav {
+      height: 40px;
+      margin: 0 auto;
+      width: 1210px;
+      color: #333;
+      font-size: 14px;
+      position: relative; }
+      #shop-head .nav-wrapper .nav ul li {
+        float: left;
+        line-height: 24px;
+        height: 24px;
+        padding: 8px 0;
+        border-radius: 12px; }
+        #shop-head .nav-wrapper .nav ul li a {
+          position: relative;
+          display: block;
+          padding: 0 15px;
+          border-radius: 12px;
+          color: #FCFCFC; }
+      #shop-head .nav-wrapper .nav .form {
+        position: absolute;
+        top: 8px;
+        right: 0px; }
+        #shop-head .nav-wrapper .nav .form div .ipt {
+          padding: 0 0 0 10px;
+          width: 130px;
+          line-height: 22px;
+          height: 22px;
+          background-color: #ffffff;
+          color: #c9c9c9;
+          vertical-align: top;
+          outline: none;
+          border: solid 1px #e1e1e1;
+          border-top-left-radius: 11px;
+          border-bottom-left-radius: 11px; }
+        #shop-head .nav-wrapper .nav .form div .sub {
+          margin-left: -5px;
+          padding: 0 10px;
+          border: 0;
+          height: 24px;
+          width: 46px;
+          cursor: pointer;
+          border-top-right-radius: 11px;
+          border-bottom-right-radius: 11px;
+          background: #333 url(../img/fdj.png) no-repeat center; }
+
+#path {
+  background: #eeeeee;
+  clear: both;
+  position: relative;
+  height: 44px; }
+  #path .w .pl {
+    position: relative;
+    float: left;
+    padding: 13px 0 9px; }
+    #path .w .pl .ipt {
+      float: left; }
+    #path .w .pl a {
+      color: #666;
+      float: left; }
+    #path .w .pl span {
+      padding: 0 10px;
+      float: left; }
+  #path .w .pr {
+    float: right;
+    position: relative;
+    padding: 13px 0 0; }
+
+/* 这是内容区域 */
+.main {
+  width: 1200px;
+  margin: 20px auto 0;
+  overflow: hidden;
+  position: relative; }
+
+.left {
+  float: left; }
+
+.minBox {
+  float: left;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 20px; }
+
+.minBox img {
+  width: 350px;
+  height: 350px;
+  display: block; }
+
+.minBox .mask {
+  width: 175px;
+  height: 175px;
+  background: orange;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: move;
+  display: none; }
+
+.content {
+  float: left;
+  margin-left: 20px; }
+
+.opt {
+  width: 350px;
+  height: 100px; }
+
+#box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid transparent;
+  float: left;
+  margin-left: 10px; }
+
+#box img {
+  width: 100px;
+  height: 100px; }
+
+.maxBox {
+  width: 400px;
+  height: 400px;
+  border: 1px solid green;
+  position: absolute;
+  top: 0;
+  left: 370px;
+  overflow: hidden;
+  display: none; }
+
+.maxBox img {
+  width: 800px;
+  height: 800px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.xuan {
+  border: 2px solid red; }

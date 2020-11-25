@@ -3,13 +3,13 @@
 (function () {
   function Tab(options) {
     // 初始化
-    console.log(this);
+    // console.log(this);
     this.init(options);
   } // 初始化方法
 
 
   Tab.prototype.init = function (options) {
-    console.log(this);
+    // console.log(this);
     this.tits = this.getElement(options.titles);
     this.cons = this.getElement(options.contents);
     this.showIndex = options.showIndex || 0; // 设置默认显示的选项
@@ -22,8 +22,8 @@
 
 
   Tab.prototype.bindEvent = function () {
-    var init1 = $1('.new-top .tab .tab-head .tab-head-item:nth-child(1) a');
-    console.log(init1);
+    var init1 = $1('.new-top .tab .tab-head .tab-head-item:nth-child(1) a'); // console.log(init1);
+
     init1.style.className = 'top-tab-lk active2'; //  缓存this指向
 
     var _this = this;
