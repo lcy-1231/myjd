@@ -14,3 +14,6 @@ if(localStorage.getItem('goods')){
 }else{
   shoppingamount.innerHTML=0
 }
+
+
+
