@@ -4,7 +4,7 @@
 }
 #logo-2014 {
   position: relative;
-  z-index: 12;
+  z-index: 9;
   float: left;
   width: 362px;
   height: 60px;
@@ -310,9 +310,6 @@
       li{
         float: left;
         padding: 0 30px;
-        a{
-          // color: #ddd;
-        }
       }
       .bgred{
         background-color: #dd1a1a;
