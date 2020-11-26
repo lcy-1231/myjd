@@ -1,7 +1,5 @@
 (function(){
   
-  
-
   function Tab(options){
     // 初始化
     // console.log(this);

@@ -1,12 +1,4 @@
 $(function(){
-
-  if(localStorage.getItem('user')){
-    var username=localStorage.getItem('user')
-    console.log(username);
-    $1('#useralready').innerText=username+'你好！'
-    $1('#nouseralready').innerText='欢迎逛京东'
-  }
-  
   // 点击搜索返回列表页
   $1('#search').onclick=function(){
     window.location='./goodslist.html'
@@ -15,13 +7,15 @@ $(function(){
   // 拿到本地存储中的数据来渲染页面
   var all = document.querySelector('#all');
   var list = document.querySelector('.list');
+  var carhave=$1('.car-have')
   
   // 1-先判断本地存储是否有购物车数据
   if(localStorage.getItem('goods')){
 
     // 显示展示列表的区域
-    var carhave=$1('.car-have')
     carhave.style.display='block'
+    $1('#bangnixuan').style.display='block'
+    $1('#xihuan').style.display='block'
 
     // 2-有数据-->获取-->得到的是字符串，要转换成对象，才能使用里面的数据
     var goodsArr=JSON.parse(localStorage.getItem('goods'))
@@ -219,17 +213,21 @@ $(function(){
               var aprice
               var anum
               var sum=0
-              for (var j = 0;len = checks.length, j < len; j++){
+              for (var j = 0,len = checks.length;j < len; j++){
                 if ( checks[j].checked ) {
                   aprice=checks[j].parentNode.children[3].innerHTML
                   anum=checks[j].parentNode.children[4].children[1].innerHTML
                   sum+=aprice*anum
+                  // checks[j].parentNode.style.backgroundColor='pink'
+                  // console.log(checks[j].parentNode);
+                  checks[j].parentNode.style.background='pink'
                 }
               }
               $1('#heji').innerText=sum.toFixed(3)
           } else {
               checks[i].checked = false;
               $1('#heji').innerText='0'
+              checks[i].parentNode.style.background='#fff'
           }
       }
     })
@@ -261,6 +259,9 @@ $(function(){
           aprice=checks[i].parentNode.children[3].innerHTML
           anum=checks[i].parentNode.children[4].children[1].innerHTML
           sum+=aprice*anum
+          checks[i].parentNode.style.background='pink'
+        }else{
+          checks[i].parentNode.style.background='#fff'
         }
       }
       $1('#heji').innerText=sum.toFixed(3)
@@ -274,6 +275,8 @@ $(function(){
 
   }else{
     carhave.style.display='none'
+    $1('#bangnixuan').style.display='none'
+    $1('#xihuan').style.display='none'
 
     // 3-没数据-->告诉用户购物车暂无数据
     var nodata= `
@@ -288,7 +291,5 @@ $(function(){
     $('.car-body .w').html(nodata)
   }
 
-
-  //我要先设置全选按钮了
 
 })

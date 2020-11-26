@@ -1,26 +1,21 @@
 "use strict";
 
 $(function () {
-  if (localStorage.getItem('user')) {
-    var username = localStorage.getItem('user');
-    console.log(username);
-    $1('#useralready').innerText = username + '你好！';
-    $1('#nouseralready').innerText = '欢迎逛京东';
-  } // 点击搜索返回列表页
-
-
+  // 点击搜索返回列表页
   $1('#search').onclick = function () {
     window.location = './goodslist.html';
   }; // 拿到本地存储中的数据来渲染页面
 
 
   var all = document.querySelector('#all');
-  var list = document.querySelector('.list'); // 1-先判断本地存储是否有购物车数据
+  var list = document.querySelector('.list');
+  var carhave = $1('.car-have'); // 1-先判断本地存储是否有购物车数据
 
   if (localStorage.getItem('goods')) {
     // 显示展示列表的区域
-    var carhave = $1('.car-have');
-    carhave.style.display = 'block'; // 2-有数据-->获取-->得到的是字符串，要转换成对象，才能使用里面的数据
+    carhave.style.display = 'block';
+    $1('#bangnixuan').style.display = 'block';
+    $1('#xihuan').style.display = 'block'; // 2-有数据-->获取-->得到的是字符串，要转换成对象，才能使用里面的数据
 
     var goodsArr = JSON.parse(localStorage.getItem('goods')); // 2-1 获取后端传来的json数据
 
@@ -174,11 +169,14 @@ $(function () {
           var anum;
           var sum = 0;
 
-          for (var j = 0; len = checks.length, j < len; j++) {
+          for (var j = 0, len = checks.length; j < len; j++) {
             if (checks[j].checked) {
               aprice = checks[j].parentNode.children[3].innerHTML;
               anum = checks[j].parentNode.children[4].children[1].innerHTML;
-              sum += aprice * anum;
+              sum += aprice * anum; // checks[j].parentNode.style.backgroundColor='pink'
+              // console.log(checks[j].parentNode);
+
+              checks[j].parentNode.style.background = 'pink';
             }
           }
 
@@ -186,6 +184,7 @@ $(function () {
         } else {
           checks[i].checked = false;
           $1('#heji').innerText = '0';
+          checks[i].parentNode.style.background = '#fff';
         }
       }
     }); //选择任务（事件委托）
@@ -221,6 +220,9 @@ $(function () {
           aprice = checks[i].parentNode.children[3].innerHTML;
           anum = checks[i].parentNode.children[4].children[1].innerHTML;
           sum += aprice * anum;
+          checks[i].parentNode.style.background = 'pink';
+        } else {
+          checks[i].parentNode.style.background = '#fff';
         }
       }
 
@@ -229,10 +231,11 @@ $(function () {
     //合计部分 显示的金额是选中了的商品的
     // 遍历列表中的数据，获得选中的li
   } else {
-    carhave.style.display = 'none'; // 3-没数据-->告诉用户购物车暂无数据
+    carhave.style.display = 'none';
+    $1('#bangnixuan').style.display = 'none';
+    $1('#xihuan').style.display = 'none'; // 3-没数据-->告诉用户购物车暂无数据
 
     var nodata = "\n    <div class=\"car-empty\">\n      <div class=\"message\">\n        <ul>\n          <li class=\"txt\">\u8D2D\u7269\u8F66\u7A7A\u7A7A\u7684\u54E6~\uFF0C\u53BB\u770B\u770B\u5FC3\u4EEA\u7684\u5546\u54C1\u5427~</li>\n          <li><a>\u53BB\u8D2D\u7269</a></li>\n        </ul>\n      </div>\n    </div>";
     $('.car-body .w').html(nodata);
-  } //我要先设置全选按钮了
-
+  }
 });
