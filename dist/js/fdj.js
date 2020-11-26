@@ -1,6 +1,9 @@
 "use strict";
 
-// 获取元素 需要小图 遮罩层 大图 大图中的图片
+$('#search-2014').on('click', function () {
+  window.location = './goodslist.html';
+}); // 获取元素 需要小图 遮罩层 大图 大图中的图片
+
 var minBox = document.querySelector('.minBox');
 var mask = document.querySelector('.mask');
 var maxBox = document.querySelector('.maxBox');

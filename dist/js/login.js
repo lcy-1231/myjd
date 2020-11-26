@@ -13,7 +13,8 @@ loginsubmit.onclick = function () {
 
   if (!us || !ps) {
     cuo.innerHTML = '账号或密码不能为空';
-    cuo.style.display = 'block'; // return;
+    cuo.style.display = 'block';
+    return;
   }
 
   if (us && ps) {
@@ -23,26 +24,18 @@ loginsubmit.onclick = function () {
   ajax({
     url: './data/user.php',
     type: 'post',
-    data: {
-      user: us,
-      //user是input获取的
-      pass: ps,
-      //pass是input获取的
-      type: 'login'
-    },
     dataType: 'json',
     success: function success(json) {
-      // console.log(json.msg);
-      // console.log(json.err);
-      if (json.err = ' 0') {
-        location.href = './index.html';
-      } else {
-        cuo.innerHTML = '输入错误，请重新输入';
-        cuo.style.display = 'block';
-      }
-    },
-    error: function error(code) {
-      alert(json.msg);
+      json.forEach(function (item) {
+        if (item.username === us && item.password === ps) {
+          window.location = './index.html';
+          localStorage.setItem('user', item.username);
+          localStorage.setItem('pass', item.password);
+        } else {
+          cuo.innerHTML = '输入错误，请重新输入';
+          cuo.style.display = 'block';
+        }
+      });
     }
   });
 };

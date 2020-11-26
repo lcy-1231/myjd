@@ -1,7 +1,19 @@
 "use strict";
 
 $(function () {
-  // 拿到本地存储中的数据来渲染页面
+  if (localStorage.getItem('user')) {
+    var username = localStorage.getItem('user');
+    console.log(username);
+    $1('#useralready').innerText = username + '你好！';
+    $1('#nouseralready').innerText = '欢迎逛京东';
+  } // 点击搜索返回列表页
+
+
+  $1('#search').onclick = function () {
+    window.location = './goodslist.html';
+  }; // 拿到本地存储中的数据来渲染页面
+
+
   var all = document.querySelector('#all');
   var list = document.querySelector('.list'); // 1-先判断本地存储是否有购物车数据
 
@@ -106,7 +118,6 @@ $(function () {
               $.each(goodsArr, function (index, item) {
                 $.each(json, function (ind, obj) {
                   if (item.id === obj.id) {
-                    console.log(item.id);
                     domStr += "\n                    <li>\n                      <input type=\"checkbox\" class=\"one\">\n                      <img src=\"".concat(obj.img, "\" alt=\"\">\n                      <h3>").concat(obj.name, "</h3>\n                      <p>").concat(obj.price, "</p>\n                      <span><button class=\"sub\" id=\"").concat(obj.id, "\">-</button> <i id=\"").concat(obj.id, "\">").concat(item.num, "</i>  <button class=\"plus\" id=\"").concat(obj.id, "\">+</button></span>\n                      <em id=\"").concat(obj.id, "\">\u5220\u9664</em> \n                    </li>\n                    "); //删除 保存code是为了删除的时候获取相对应的数据
                   }
                 });
@@ -139,7 +150,6 @@ $(function () {
               $.each(goodsArr, function (index, item) {
                 $.each(json, function (ind, obj) {
                   if (item.id === obj.id) {
-                    console.log(item.id);
                     domStr += "\n                    <li>\n                      <input type=\"checkbox\" class=\"one\">\n                      <img src=\"".concat(obj.img, "\" alt=\"\">\n                      <h3>").concat(obj.name, "</h3>\n                      <p>").concat(obj.price, "</p>\n                      <span><button class=\"sub\" id=\"").concat(obj.id, "\">-</button> <i id=\"").concat(obj.id, "\">").concat(item.num, "</i>  <button class=\"plus\" id=\"").concat(obj.id, "\">+</button></span>\n                      <em id=\"").concat(obj.id, "\">\u5220\u9664</em> \n                    </li>\n                    ");
                   }
                 });
@@ -158,8 +168,24 @@ $(function () {
       for (var i = 0, len = checks.length; i < len; i++) {
         if (this.checked) {
           checks[i].checked = true;
+          /* 此时打印勾选状态的商品li */
+
+          var aprice;
+          var anum;
+          var sum = 0;
+
+          for (var j = 0; len = checks.length, j < len; j++) {
+            if (checks[j].checked) {
+              aprice = checks[j].parentNode.children[3].innerHTML;
+              anum = checks[j].parentNode.children[4].children[1].innerHTML;
+              sum += aprice * anum;
+            }
+          }
+
+          $1('#heji').innerText = sum.toFixed(3);
         } else {
           checks[i].checked = false;
+          $1('#heji').innerText = '0';
         }
       }
     }); //选择任务（事件委托）
@@ -198,12 +224,10 @@ $(function () {
         }
       }
 
-      $1('#heji').innerText = sum;
+      $1('#heji').innerText = sum.toFixed(3);
     }); //怎么复用$.ajax?????
     //合计部分 显示的金额是选中了的商品的
     // 遍历列表中的数据，获得选中的li
-
-    $(list).on('click', 'li', function () {});
   } else {
     carhave.style.display = 'none'; // 3-没数据-->告诉用户购物车暂无数据
 

@@ -1,4 +1,17 @@
 $(function(){
+
+  if(localStorage.getItem('user')){
+    var username=localStorage.getItem('user')
+    console.log(username);
+    $1('#useralready').innerText=username+'你好！'
+    $1('#nouseralready').innerText='欢迎逛京东'
+  }
+  
+  // 点击搜索返回列表页
+  $1('#search').onclick=function(){
+    window.location='./goodslist.html'
+  }
+
   // 拿到本地存储中的数据来渲染页面
   var all = document.querySelector('#all');
   var list = document.querySelector('.list');
@@ -129,7 +142,6 @@ $(function(){
               $.each(goodsArr,function(index,item){
                 $.each(json,function(ind,obj){
                   if(item.id===obj.id){
-                    console.log(item.id);
                     domStr+=`
                     <li>
                       <input type="checkbox" class="one">
@@ -175,7 +187,6 @@ $(function(){
               $.each(goodsArr,function(index,item){
                 $.each(json,function(ind,obj){
                   if(item.id===obj.id){
-                    console.log(item.id);
                     domStr+=`
                     <li>
                       <input type="checkbox" class="one">
@@ -204,8 +215,21 @@ $(function(){
       for (var i = 0, len = checks.length; i < len; i++){
           if ( this.checked ) {
               checks[i].checked = true;
+              /* 此时打印勾选状态的商品li */
+              var aprice
+              var anum
+              var sum=0
+              for (var j = 0;len = checks.length, j < len; j++){
+                if ( checks[j].checked ) {
+                  aprice=checks[j].parentNode.children[3].innerHTML
+                  anum=checks[j].parentNode.children[4].children[1].innerHTML
+                  sum+=aprice*anum
+                }
+              }
+              $1('#heji').innerText=sum.toFixed(3)
           } else {
               checks[i].checked = false;
+              $1('#heji').innerText='0'
           }
       }
     })
@@ -239,16 +263,13 @@ $(function(){
           sum+=aprice*anum
         }
       }
-      $1('#heji').innerText=sum
+      $1('#heji').innerText=sum.toFixed(3)
     });
 
     //怎么复用$.ajax?????
 
     //合计部分 显示的金额是选中了的商品的
     // 遍历列表中的数据，获得选中的li
-    $(list).on('click','li',function(){
-
-    })
 
 
   }else{
