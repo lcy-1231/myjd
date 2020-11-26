@@ -1,16 +1,12 @@
-"use strict";
+// 如果能获取数据，把购物车里的小红标里的数字改变
+var shoppingamount=$1('#shopping-amount')
+if(localStorage.getItem('goods')){
+  var goodsArr=JSON.parse(localStorage.getItem('goods'))
+  shoppingamount.innerHTML=goodsArr.length
 
-// 点击我的购物车跳转页面
-$('#zhuancar').on('click', function () {
-  window.location = './goodscars.html';
-}); // console.log($('#settleup-2014'));
-
-var shoppingamount = $1('#shopping-amount');
-
-if (localStorage.getItem('goods')) {
-  // 总要更新数据，怎么即使更新??????????????????
-  var goodsArr = JSON.parse(localStorage.getItem('goods'));
-  shoppingamount.innerHTML = goodsArr.length; // ajax局部刷新
-} else {
-  shoppingamount.innerHTML = 0;
+}else{
+  shoppingamount.innerHTML=0
 }
+
+
+

@@ -5,6 +5,9 @@ $(imycar).on('click',function(){
     window.location='./goodscars.html'
   }else{
     // 如果没登录，就跳入到登录界面
-    window.location='./login.html'
+    alert('请登录京东！2s后将跳转到登录界面')
+    setInterval(() => {
+      window.location='./login.html'
+    }, 2000);
   }
 })

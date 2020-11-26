@@ -1,4 +1,22 @@
 (function(){
+
+  var feedtab=$2('.J-feeds .more2 .feed-tab-item')
+  // for(var i=0;i<feedtab.length;i++){
+  //   feedtab[i].index=i
+  //   feedtab[i].onclick=function(){
+  //     var _this=this
+  //     feedtab[this.index].className='feed-tab-item'
+  //     console.log(this);
+  //     _this.className='feed-tab-item feed-tab-item-active'
+  //   }
+  // }
+  
+
+  $(feedtab).on('mouseenter','.J-feeds .more2 .feed-tab-item',function(){
+    console.log(1111111);
+    this.className='feed-tab-item feed-tab-item-active'
+  })
+
   // 渲染到哪里
   var more2list=$1('.J-feeds .more2 .more2-list')
   $.ajax({
