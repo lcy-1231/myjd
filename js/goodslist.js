@@ -1,10 +1,21 @@
-(function(){
 
   // 点击我的购物车跳转页面
-  $('.cw-icon').onclick=function(){
-    location.href='./goodscars.html'
+  $('#zhuancar').on('click',function(){
+    console.log(11111);
+    window.location='./goodscars.html'
+  })
+  // console.log($('#settleup-2014'));
+
+  var shoppingamount=$1('#shopping-amount')
+  if(localStorage.getItem('goods')){
+    // 总要更新数据，怎么即使更新??????????????????
+    var goodsArr=JSON.parse(localStorage.getItem('goods'))
+    shoppingamount.innerHTML=goodsArr.length
+    // ajax局部刷新
+
+  }else{
+    shoppingamount.innerHTML=0
   }
-  console.log($('#settleup-2014'));
 
 
   var goodslist=$1('.mod_container .seckill_container .skwrap .spsk .seckill_mod_goodslist')
@@ -34,7 +45,7 @@
               </span>
             </span>
           </span>
-          <a class="seckill_mod_goods_info_i">立即抢购</a>
+          <a class="seckill_mod_goods_info_i" id="${item.id}">立即抢购</a>
         </div>
       </li>
         `
@@ -46,7 +57,7 @@
   $('.seckill_mod_goodslist').on('click','.seckill_mod_goods .seckill_mod_goods_info_i',function(){
     // 怎么确定点击的是要加入购物车的商品?每个商品都有一个唯一的id
     // 2-2 点击当前元素，可以获得当前商品的编号,是在上面的加入购物车按钮上添加了一个属性，保存了每个商品的id值
-    var code=$(this).attr('code')
+    var id=$(this).attr('id')
     // 加入购物车，是先在商品列表页面保存点击加入购物车的商品，和加入了几次，num
     // 添加到本地存储
     // localStorage key=value
@@ -71,7 +82,7 @@
       // 2-4 判断当前选中商品是否在购物车中
       $.each(goodsArr,function(index,item){
         //这是本地存储中的数据的遍历
-        if(item.code===code){
+        if(item.id===id){
           // 商品已经存在购物车中了
           hasGoods=true
           // 所以只是数量+1
@@ -83,8 +94,8 @@
     }
     // 本地存储里没有当前点击的商品,将此条商品添加进本地存储中
     if(!hasGoods){
-      console.log(code);
-      goodsArr.push({code:code,num:1})
+      console.log(id);
+      goodsArr.push({id:id,num:1})
     }
 
     //更新本地存储数据
@@ -94,4 +105,3 @@
   })
 
 
-})()

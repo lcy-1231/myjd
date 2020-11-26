@@ -224,7 +224,15 @@ function offset(dom,bool){
     return {left:l-borderLeft,top:t-borderTop} // 不包含自身边框
   }
 }
-
+// 判断数组中是否包含某个值
+function has(arr,item){
+  for (var i = 0, len = arr.length; i < len; i++){
+      if (arr[i] === item) {
+          return true;
+      }
+  }
+  return false;
+}
 
 
 
