@@ -582,7 +582,7 @@
             color: #999; }
         .fs .fs_inner .col3 .J-news .news-list, .fs .fs_inner .col3 .news2 .news-list {
           position: relative;
-          margin: 0 15px;
+          margin: -10px 15px;
           height: 88px; }
           .fs .fs_inner .col3 .J-news .news-list li, .fs .fs_inner .col3 .news2 .news-list li {
             max-width: 160px;
