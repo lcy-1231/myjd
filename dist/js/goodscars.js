@@ -91,7 +91,7 @@ $(function(){
           <div class="message">
             <ul>
               <li class="txt">购物车空空的哦~，去看看心仪的商品吧~</li>
-              <li><a>去购物</a></li>
+              <li><a href='./index.html'>去购物</a></li>
             </ul>
           </div>
         </div>
@@ -284,7 +284,7 @@ $(function(){
       <div class="message">
         <ul>
           <li class="txt">购物车空空的哦~，去看看心仪的商品吧~</li>
-          <li><a>去购物</a></li>
+          <li><a href='./index.html'>去购物</a></li>
         </ul>
       </div>
     </div>`
